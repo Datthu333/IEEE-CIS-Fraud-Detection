@@ -1,0 +1,51 @@
+{
+  "checks": {
+    "all_training_and_test_rows_preserved": "PASS",
+    "split_stratified_by_isFraud": "PASS",
+    "no_target_or_test_fit_leakage": "PASS",
+    "TransactionID_and_isFraud_excluded_from_model_features": "PASS",
+    "categorical_mappings_consistent": "PASS",
+    "preprocessing_script_reproducible_and_non_overwriting": "PASS",
+    "columns_retained_and_missing_values_handled": "PASS",
+    "original_test_input_unchanged": "PASS",
+    "training_targets_preserved": "PASS"
+  },
+  "evidence": {
+    "row_counts": {
+      "train_fit": 472432,
+      "validation": 118108,
+      "test": 506691
+    },
+    "expected_original_rows": {
+      "train": 590540,
+      "test": 506691
+    },
+    "train_class_counts": {
+      "train_fit": {
+        "0": 455902,
+        "1": 16530
+      },
+      "validation": {
+        "0": 113975,
+        "1": 4133
+      }
+    },
+    "fraud_rates": {
+      "train_fit": 0.03498916246147594,
+      "validation": 0.0349933958749619,
+      "overall": 0.03499000914417313
+    },
+    "random_state": 42,
+    "validation_fraction": 0.2,
+    "model_feature_count": 432,
+    "categorical_column_count": 31,
+    "post_transform_missing_feature_cells": {
+      "train_fit": 0,
+      "validation": 0,
+      "test": 0
+    },
+    "test_input_unchanged": true,
+    "target_values_match_source": true,
+    "merged_headers_match_schema": true
+  }
+}

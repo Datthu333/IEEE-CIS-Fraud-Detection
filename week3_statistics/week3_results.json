@@ -1,0 +1,419 @@
+{
+  "scope": "cleaned training-fit partition only; no test data used",
+  "fit_rows": 472432,
+  "fraud_count": 16530,
+  "legitimate_count": 455902,
+  "fraud_rate": 0.03498916246147594,
+  "random_state": 2026,
+  "alpha": 0.05,
+  "p_adjustment": "Holm step-down familywise adjustment across all six reported hypothesis tests, including Welch sensitivity test",
+  "source_columns": [
+    "TransactionID",
+    "isFraud",
+    "TransactionAmt",
+    "ProductCD",
+    "card6",
+    "V258"
+  ],
+  "fit_manifest_rows": 472432,
+  "tests": {
+    "amount_mann_whitney": {
+      "hypotheses": {
+        "H0": "Fraudulent and legitimate transaction amounts have the same distribution.",
+        "H1": "Their transaction-amount distributions differ."
+      },
+      "test": "Two-sided Mann–Whitney U, asymptotic with tie correction",
+      "statistic": 3754598602.0,
+      "p_value": 0.43540118154270047,
+      "n_fraud": 16530,
+      "n_legitimate": 455902,
+      "fraud_median": 75.0,
+      "legitimate_median": 68.5,
+      "fraud_iqr": [
+        35.044,
+        161.0
+      ],
+      "legitimate_iqr": [
+        43.97,
+        119.95
+      ],
+      "effect": {
+        "name": "Cliff's delta (fraud minus legitimate)",
+        "estimate": -0.003564575625210755,
+        "ci_95": [
+          -0.013595625321872942,
+          0.006466474071451431
+        ]
+      },
+      "assumptions": [
+        "Transactions are treated as independent observational units.",
+        "Amounts are continuous/ordinal with ties allowed; distributions are highly skewed, so the test is interpreted as a distribution/rank difference, not a pure median test."
+      ],
+      "p_value_holm": 0.8708023630854009,
+      "p_value_display": "0.4354",
+      "p_value_holm_display": "0.8708",
+      "p_value_below_float_range": false,
+      "reject_at_0_05_holm": false
+    },
+    "log_amount_welch": {
+      "hypotheses": {
+        "H0": "The mean log1p transaction amount is equal for fraudulent and legitimate transactions.",
+        "H1": "The mean log1p transaction amount differs."
+      },
+      "test": "Two-sided Welch t-test on log1p(TransactionAmt), unequal variances",
+      "statistic": -0.7268597301748932,
+      "degrees_freedom": 17392.05277949805,
+      "p_value": 0.46732167119638496,
+      "n_fraud": 16530,
+      "n_legitimate": 455902,
+      "fraud_mean_log1p": 4.376683799506274,
+      "legitimate_mean_log1p": 4.383003396308994,
+      "mean_difference_log1p": -0.006319596802719651,
+      "mean_difference_ci_95": [
+        -0.02336146013088522,
+        0.010722266525445917
+      ],
+      "effect": {
+        "name": "Hedges' g on log1p amounts",
+        "estimate": -0.006741800480034814,
+        "ci_95_approx": [
+          -0.022260417891883755,
+          0.008776816931814129
+        ]
+      },
+      "assumptions": [
+        "Independent groups; unequal variances are allowed by Welch's test.",
+        "Log1p reduces amount skew; with large group sizes, the mean difference is asymptotically robust. The result is on the transformed scale."
+      ],
+      "role": "Sensitivity analysis for the same amount question; included in Holm correction.",
+      "p_value_holm": 0.8708023630854009,
+      "p_value_display": "0.4673",
+      "p_value_holm_display": "0.8708",
+      "p_value_below_float_range": false,
+      "reject_at_0_05_holm": false
+    },
+    "productcd_chi_square": {
+      "hypotheses": {
+        "H0": "ProductCD category and fraud status are independent.",
+        "H1": "ProductCD category and fraud status are associated."
+      },
+      "test": "Pearson chi-square test of independence",
+      "statistic": 13090.068871472811,
+      "degrees_freedom": 4,
+      "p_value": 0.0,
+      "n": 472432,
+      "categories": [
+        "C",
+        "H",
+        "R",
+        "S",
+        "W"
+      ],
+      "expected_min": 330.15773698648695,
+      "expected_all_at_least_5": true,
+      "contingency_table": {
+        "C": {
+          "0": 48418,
+          "1": 6354
+        },
+        "H": {
+          "0": 25274,
+          "1": 1235
+        },
+        "R": {
+          "0": 28963,
+          "1": 1143
+        },
+        "S": {
+          "0": 8875,
+          "1": 561
+        },
+        "W": {
+          "0": 344372,
+          "1": 7237
+        }
+      },
+      "effect": {
+        "name": "Cramer's V",
+        "estimate": 0.16645671222973316,
+        "ci_95_bootstrap": [
+          0.16225510866585538,
+          0.17039366418472582
+        ],
+        "bootstrap_replicates": 600
+      },
+      "assumptions": [
+        "Rows are independent observational units.",
+        "All expected cell counts must be at least 5; checked from the computed expected-frequency table."
+      ],
+      "monte_carlo": null,
+      "p_value_holm": 0.0,
+      "p_value_display": "<1e-300 (floating-point underflow)",
+      "p_value_holm_display": "<1e-300 (floating-point underflow)",
+      "p_value_below_float_range": true,
+      "reject_at_0_05_holm": true
+    },
+    "card6_chi_square": {
+      "hypotheses": {
+        "H0": "card6 category and fraud status are independent.",
+        "H1": "card6 category and fraud status are associated."
+      },
+      "test": "Conditional Monte Carlo Pearson chi-square test (fixed margins; sparse expected counts)",
+      "statistic": 4726.84117683179,
+      "degrees_freedom": 4,
+      "p_value": 4.999750012499375e-05,
+      "n": 472432,
+      "categories": [
+        "Missing",
+        "charge card",
+        "credit",
+        "debit",
+        "debit or credit"
+      ],
+      "expected_min": 0.45485911199918716,
+      "expected_all_at_least_5": false,
+      "contingency_table": {
+        "Missing": {
+          "0": 1263,
+          "1": 34
+        },
+        "charge card": {
+          "0": 13,
+          "1": 0
+        },
+        "credit": {
+          "0": 111155,
+          "1": 7937
+        },
+        "debit": {
+          "0": 343446,
+          "1": 8559
+        },
+        "debit or credit": {
+          "0": 25,
+          "1": 0
+        }
+      },
+      "effect": {
+        "name": "Cramer's V",
+        "estimate": 0.10002667940104829,
+        "ci_95_bootstrap": [
+          0.09702380498535065,
+          0.10344446220556022
+        ],
+        "bootstrap_replicates": 600
+      },
+      "assumptions": [
+        "Rows are independent observational units.",
+        "Sparse expected cells make the asymptotic chi-square approximation unsuitable; the p-value is estimated under fixed margins by conditional Monte Carlo simulation."
+      ],
+      "monte_carlo": {
+        "replicates": 20000,
+        "seed": 4321,
+        "plus_one_correction": true
+      },
+      "p_value_holm": 0.00014999250037498125,
+      "p_value_display": "5e-05",
+      "p_value_holm_display": "0.00015",
+      "p_value_below_float_range": false,
+      "reject_at_0_05_holm": true
+    },
+    "v258_missingness_chi_square": {
+      "hypotheses": {
+        "H0": "Whether V258 is missing is independent of fraud status.",
+        "H1": "V258 missingness is associated with fraud status."
+      },
+      "test": "Pearson chi-square test of independence (2×2)",
+      "statistic": 7059.123647265273,
+      "degrees_freedom": 1,
+      "p_value": 0.0,
+      "n": 472432,
+      "contingency_table": {
+        "0": {
+          "False": 96388,
+          "True": 359514
+        },
+        "1": {
+          "False": 8058,
+          "True": 8472
+        }
+      },
+      "expected_min": 3654.478062451316,
+      "expected_all_at_least_5": true,
+      "fraud_v258_observed_rate": 0.48747731397459165,
+      "legitimate_v258_observed_rate": 0.21142263030212632,
+      "effect": {
+        "name": "Cramer's V",
+        "estimate": 0.12223786084394245,
+        "ci_95_bootstrap": [
+          0.11885215784591288,
+          0.1255430525141274
+        ],
+        "bootstrap_replicates": 600
+      },
+      "assumptions": [
+        "Rows are independent observational units.",
+        "All expected cell counts must be at least 5; checked from the computed expected-frequency table."
+      ],
+      "caution": "A missingness association may reflect data collection/availability and is not a causal effect.",
+      "p_value_holm": 0.0,
+      "p_value_display": "<1e-300 (floating-point underflow)",
+      "p_value_holm_display": "<1e-300 (floating-point underflow)",
+      "p_value_below_float_range": true,
+      "reject_at_0_05_holm": true
+    },
+    "v258_mann_whitney": {
+      "hypotheses": {
+        "H0": "Among transactions with observed V258, its distribution is the same for fraudulent and legitimate transactions.",
+        "H1": "The observed V258 distributions differ."
+      },
+      "test": "Two-sided Mann–Whitney U, asymptotic with tie correction; pairwise-complete rows only",
+      "statistic": 579235162.5,
+      "p_value": 0.0,
+      "n_fraud": 8058,
+      "n_legitimate": 96388,
+      "fraud_median": 2.0,
+      "legitimate_median": 1.0,
+      "effect": {
+        "name": "Cliff's delta (fraud minus legitimate)",
+        "estimate": 0.49153923329422716,
+        "ci_95": [
+          0.4800389489550822,
+          0.5030395176333722
+        ]
+      },
+      "assumptions": [
+        "Independent observational rows; missing V258 values are excluded pairwise.",
+        "Because V258 is missing for many transactions, this complete-case comparison can describe only the observed subset; missingness is tested separately."
+      ],
+      "p_value_holm": 0.0,
+      "p_value_display": "<1e-300 (floating-point underflow)",
+      "p_value_holm_display": "<1e-300 (floating-point underflow)",
+      "p_value_below_float_range": true,
+      "reject_at_0_05_holm": true
+    }
+  },
+  "group_summaries": [
+    {
+      "ProductCD": "C",
+      "n": 54772,
+      "frauds": 6354,
+      "fraud_rate": 0.11600817936171767,
+      "ci_low": 0.11335320084866943,
+      "ci_high": 0.11871701697495243,
+      "feature": "ProductCD",
+      "card6": null
+    },
+    {
+      "ProductCD": "H",
+      "n": 26509,
+      "frauds": 1235,
+      "fraud_rate": 0.046587951261835604,
+      "ci_low": 0.044115932504951626,
+      "ci_high": 0.049191360214428305,
+      "feature": "ProductCD",
+      "card6": null
+    },
+    {
+      "ProductCD": "R",
+      "n": 30106,
+      "frauds": 1143,
+      "fraud_rate": 0.03796585398259483,
+      "ci_low": 0.0358653291361137,
+      "ci_high": 0.04018427285041167,
+      "feature": "ProductCD",
+      "card6": null
+    },
+    {
+      "ProductCD": "S",
+      "n": 9436,
+      "frauds": 561,
+      "fraud_rate": 0.059453158117846544,
+      "ci_low": 0.054858792062406625,
+      "ci_high": 0.06440607734582851,
+      "feature": "ProductCD",
+      "card6": null
+    },
+    {
+      "ProductCD": "W",
+      "n": 351609,
+      "frauds": 7237,
+      "fraud_rate": 0.0205825220628596,
+      "ci_low": 0.020118432328504108,
+      "ci_high": 0.021057087310519865,
+      "feature": "ProductCD",
+      "card6": null
+    },
+    {
+      "ProductCD": null,
+      "n": 1297,
+      "frauds": 34,
+      "fraud_rate": 0.026214340786430222,
+      "ci_low": 0.018819103545161336,
+      "ci_high": 0.03640781002955172,
+      "feature": "card6",
+      "card6": "Missing"
+    },
+    {
+      "ProductCD": null,
+      "n": 13,
+      "frauds": 0,
+      "fraud_rate": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.22809537235419838,
+      "feature": "card6",
+      "card6": "charge card"
+    },
+    {
+      "ProductCD": null,
+      "n": 119092,
+      "frauds": 7937,
+      "fraud_rate": 0.06664595438820407,
+      "ci_low": 0.06524338513769709,
+      "ci_high": 0.06807647947160345,
+      "feature": "card6",
+      "card6": "credit"
+    },
+    {
+      "ProductCD": null,
+      "n": 352005,
+      "frauds": 8559,
+      "fraud_rate": 0.02431499552563174,
+      "ci_low": 0.023811341298044617,
+      "ci_high": 0.024829032017191187,
+      "feature": "card6",
+      "card6": "debit"
+    },
+    {
+      "ProductCD": null,
+      "n": 25,
+      "frauds": 0,
+      "fraud_rate": 0.0,
+      "ci_low": 1.3877787807814457e-17,
+      "ci_high": 0.13319225093904846,
+      "feature": "card6",
+      "card6": "debit or credit"
+    }
+  ],
+  "prior_context": {
+    "week1_findings_file": ".\\week1_eda\\findings.md",
+    "week2_findings_file": ".\\week2_visualization\\findings.md",
+    "reuse_only": true
+  },
+  "charts": [
+    ".\\week3_statistics\\charts\\01_amount_distribution_by_fraud_status.png",
+    ".\\week3_statistics\\charts\\02_productcd_fraud_rates.png",
+    ".\\week3_statistics\\charts\\03_card6_fraud_rates.png",
+    ".\\week3_statistics\\charts\\04_v258_availability_by_fraud_status.png"
+  ],
+  "checks": {
+    "fit_rows_match_manifest": true,
+    "fit_class_counts_match_manifest": true,
+    "productcd_expected_counts_at_least_5": true,
+    "card6_sparse_cells_use_conditional_monte_carlo": true,
+    "v258_missing_expected_counts_at_least_5": true,
+    "no_test_input_read": true,
+    "no_model_training": true,
+    "prior_outputs_read_only": true
+  }
+}

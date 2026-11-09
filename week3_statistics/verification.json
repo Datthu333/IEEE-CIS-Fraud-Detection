@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "checks": {
+    "fit_row_and_class_counts_match_manifest": true,
+    "fit_ids_unique_and_target_matches": true,
+    "all_six_test_pvalues_recomputed": true,
+    "holm_values_recomputed": true,
+    "underflow_pvalues_are_labeled_in_results": true,
+    "regular_chi_square_expected_counts_ge_5": true,
+    "card6_sparse_expected_counts_use_conditional_monte_carlo": true,
+    "effect_sizes_and_intervals_valid": true,
+    "group_summaries_reconcile_to_fit_rows": true,
+    "four_pngs_exist_and_are_readable": true,
+    "all_four_pngs_embedded_in_report": true,
+    "no_test_source_access_in_workflow": true
+  },
+  "fit_rows": 472432,
+  "fraud_rows": 16530,
+  "legitimate_rows": 455902,
+  "recomputed_p_values": {
+    "amount_mann_whitney": 0.43540118154270047,
+    "log_amount_welch": 0.46732167119638496,
+    "productcd_chi_square": 0.0,
+    "card6_chi_square": 4.999750012499375e-05,
+    "v258_missingness_chi_square": 0.0,
+    "v258_mann_whitney": 0.0
+  },
+  "report_embedded_images": 4
+}

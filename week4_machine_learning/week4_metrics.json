@@ -1,0 +1,223 @@
+{
+  "scope": "existing v2 train-fit and validation partitions only; no test data read",
+  "train_rows": 472432,
+  "validation_rows": 118108,
+  "train_fraud_count": 16530,
+  "validation_fraud_count": 4133,
+  "train_fraud_rate": 0.03498916246147594,
+  "validation_fraud_rate": 0.0349933958749619,
+  "split_random_state": 42,
+  "model_random_state": 42,
+  "threshold": 0.5,
+  "preprocessor_fit_partition": "train_fit only",
+  "feature_columns": [
+    "TransactionAmt",
+    "C1",
+    "C2",
+    "D1",
+    "D2",
+    "V258",
+    "V307",
+    "ProductCD",
+    "card4",
+    "card6",
+    "DeviceType"
+  ],
+  "numeric_features": [
+    "TransactionAmt",
+    "C1",
+    "C2",
+    "D1",
+    "D2",
+    "V258",
+    "V307"
+  ],
+  "categorical_features": [
+    "ProductCD",
+    "card4",
+    "card6",
+    "DeviceType"
+  ],
+  "excluded_columns": [
+    "TransactionID",
+    "isFraud",
+    "TransactionDT"
+  ],
+  "encoded_feature_count": 30,
+  "class_weights": {
+    "0": 0.5181288961224123,
+    "1": 14.290139140955837
+  },
+  "class_imbalance_ratio_legitimate_to_fraud": 27.580278281911674,
+  "pr_auc_definition": "Average precision (step-wise precision-recall summary)",
+  "models": {
+    "Prior baseline (Dummy)": {
+      "train": {
+        "accuracy": 0.965010837538524,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "roc_auc": 0.5,
+        "pr_auc_average_precision": 0.03498916246147594,
+        "threshold": 0.5,
+        "confusion_matrix_labels_0_1": [
+          [
+            455902,
+            0
+          ],
+          [
+            16530,
+            0
+          ]
+        ],
+        "true_negatives": 455902,
+        "false_positives": 0,
+        "false_negatives": 16530,
+        "true_positives": 0
+      },
+      "validation": {
+        "accuracy": 0.9650066041250381,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "roc_auc": 0.5,
+        "pr_auc_average_precision": 0.0349933958749619,
+        "threshold": 0.5,
+        "confusion_matrix_labels_0_1": [
+          [
+            113975,
+            0
+          ],
+          [
+            4133,
+            0
+          ]
+        ],
+        "true_negatives": 113975,
+        "false_positives": 0,
+        "false_negatives": 4133,
+        "true_positives": 0
+      },
+      "model_type": "DummyClassifier(strategy='prior')"
+    },
+    "Logistic Regression (balanced)": {
+      "train": {
+        "accuracy": 0.7892776103227555,
+        "precision": 0.09943066679532954,
+        "recall": 0.62335148215366,
+        "f1": 0.1715046604527297,
+        "roc_auc": 0.7809698893907169,
+        "pr_auc_average_precision": 0.2599072159492734,
+        "threshold": 0.5,
+        "confusion_matrix_labels_0_1": [
+          [
+            362576,
+            93326
+          ],
+          [
+            6226,
+            10304
+          ]
+        ],
+        "true_negatives": 362576,
+        "false_positives": 93326,
+        "false_negatives": 6226,
+        "true_positives": 10304
+      },
+      "validation": {
+        "accuracy": 0.7899295559995936,
+        "precision": 0.10142636854279105,
+        "recall": 0.6365835954512461,
+        "f1": 0.17497422937518706,
+        "roc_auc": 0.7885531138981784,
+        "pr_auc_average_precision": 0.2747582602176987,
+        "threshold": 0.5,
+        "confusion_matrix_labels_0_1": [
+          [
+            90666,
+            23309
+          ],
+          [
+            1502,
+            2631
+          ]
+        ],
+        "true_negatives": 90666,
+        "false_positives": 23309,
+        "false_negatives": 1502,
+        "true_positives": 2631
+      },
+      "model_type": "LogisticRegression"
+    },
+    "HistGradientBoosting (weighted)": {
+      "train": {
+        "accuracy": 0.8339612896670844,
+        "precision": 0.13879489393479733,
+        "recall": 0.7196007259528131,
+        "f1": 0.232706002034588,
+        "roc_auc": 0.8566926401990486,
+        "pr_auc_average_precision": 0.4089958743490148,
+        "threshold": 0.5,
+        "confusion_matrix_labels_0_1": [
+          [
+            382095,
+            73807
+          ],
+          [
+            4635,
+            11895
+          ]
+        ],
+        "true_negatives": 382095,
+        "false_positives": 73807,
+        "false_negatives": 4635,
+        "true_positives": 11895
+      },
+      "validation": {
+        "accuracy": 0.8342787956785315,
+        "precision": 0.13965646004480955,
+        "recall": 0.7239293491410598,
+        "f1": 0.2341432875533122,
+        "roc_auc": 0.8568545914158145,
+        "pr_auc_average_precision": 0.4218200146886596,
+        "threshold": 0.5,
+        "confusion_matrix_labels_0_1": [
+          [
+            95543,
+            18432
+          ],
+          [
+            1141,
+            2992
+          ]
+        ],
+        "true_negatives": 95543,
+        "false_positives": 18432,
+        "false_negatives": 1141,
+        "true_positives": 2992
+      },
+      "model_type": "HistGradientBoostingClassifier"
+    }
+  },
+  "best_model_by_validation_pr_auc": "HistGradientBoosting (weighted)",
+  "charts": [
+    ".\\week4_machine_learning\\charts\\01_precision_recall_curve.png",
+    ".\\week4_machine_learning\\charts\\02_roc_curve.png",
+    ".\\week4_machine_learning\\charts\\03_confusion_matrix_best_model.png"
+  ],
+  "transform_fit_evidence": {
+    "standard_scaler_and_onehotencoder_fit_on": "train_fit only",
+    "validation_operation": "transform only",
+    "categorical_reserved_codes": {
+      "0": "missing",
+      "1": "unseen"
+    }
+  },
+  "checks": {
+    "row_counts_match_manifest": true,
+    "class_counts_match_manifest": true,
+    "train_validation_ids_disjoint": true,
+    "target_and_id_excluded_from_features": true,
+    "test_data_not_used": true
+  }
+}

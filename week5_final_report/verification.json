@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "checks": {
+    "report_exists_and_nonempty": true,
+    "week1_source_counts_match": true,
+    "cleaning_merge_and_losslessness_summary_present": true,
+    "v2_split_counts_and_rates_match": true,
+    "week2_advanced_findings_match_saved_metrics": true,
+    "week3_test_scope_and_holm_procedure_present": true,
+    "week4_metrics_match_verified_outputs": true,
+    "model_and_error_numbers_in_report": true,
+    "all_source_chart_files_exist": true,
+    "all_source_chart_pngs_are_readable": true,
+    "all_19_charts_embedded": true,
+    "embedded_chart_media_matches_all_source_pngs": true,
+    "statistical_test_numbers_match_saved_week3_results": true,
+    "model_metric_numbers_match_saved_week4_results": true,
+    "required_report_sections_present": true,
+    "reproducible_scripts_referenced": true,
+    "report_is_week5_only_no_new_analysis": true,
+    "all_model_test_and_eda_values_are_source_bound": true
+  },
+  "report": ".\\week5_final_report\\YuvaIntern_IEEE_CIS_Fraud_Detection_Final_Report.docx",
+  "embedded_chart_count": 19,
+  "source_chart_count": 19,
+  "report_paragraph_count": 249,
+  "report_table_count": 5,
+  "report_heading_count": 75,
+  "render_review": "NOT COMPLETED: LibreOffice and Microsoft Word are unavailable; no software was installed.",
+  "source_week_counts": {
+    "week1_rows": 590540,
+    "train_fit_rows": 472432,
+    "validation_rows": 118108,
+    "test_rows_context_only": 506691
+  }
+}

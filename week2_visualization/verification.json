@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "checks": {
+    "fit_rows_match_manifest": true,
+    "fit_target_counts_match_manifest": true,
+    "amount_decile_rows_sum_to_fit": true,
+    "daily_rows_sum_to_fit": true,
+    "category_pair_rows_sum_to_fit": true,
+    "product_amount_rows_sum_to_fit": true,
+    "time_amount_rows_sum_to_fit": true,
+    "no_test_source_read": true,
+    "no_model_training": true,
+    "week1_sources_read_only": true,
+    "charts_generated": true,
+    "all_generated_charts_embedded": true,
+    "findings_have_calculation_evidence": true,
+    "report_exists": true,
+    "no_test_data_read": true,
+    "no_model_trained": true,
+    "all_checks_pass": true
+  },
+  "fit_rows": 472432,
+  "fit_fraud_count": 16530,
+  "chart_count": 7,
+  "charts_embedded_in_docx": 7,
+  "finding_count": 7,
+  "docx_bytes": 1531907,
+  "paths": {
+    "report": ".\\week2_visualization\\Week2_Advanced_Visualization_Storytelling.docx",
+    "script": ".\\week2_visualization\\week2_visualization.py",
+    "charts": ".\\week2_visualization\\charts",
+    "metrics": ".\\week2_visualization\\week2_metrics.json",
+    "findings": ".\\week2_visualization\\findings.md"
+  }
+}

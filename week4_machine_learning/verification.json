@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "checks": {
+    "train_and_validation_counts_match_manifest": true,
+    "train_validation_keys_disjoint": true,
+    "validation_prediction_keys_and_labels_match": true,
+    "id_and_target_excluded_from_features": true,
+    "train_only_preprocessing_documented": true,
+    "validation_metrics_recomputed_from_saved_predictions": true,
+    "saved_model_artifacts_reproduce_validation_probabilities": true,
+    "three_evaluation_charts_exist_and_are_readable": true,
+    "all_charts_embedded_in_docx": true,
+    "workflow_does_not_reference_test_csvs": true,
+    "no_test_data_used_as_model_input": true,
+    "all_required_metrics_present": true
+  },
+  "train_rows": 472432,
+  "validation_rows": 118108,
+  "model_count": 3,
+  "validation_row_count_in_predictions": 118108,
+  "report_image_count": 3,
+  "metrics_recomputed": true
+}

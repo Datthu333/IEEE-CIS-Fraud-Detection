@@ -1,0 +1,3 @@
+# Stratified split summary
+
+The training set contains 590,540 rows and is stratified into 472,432 training-fit rows and 118,108 validation rows using `isFraud` and `random_state=42`. The training-fit partition contains 16,530 fraud and 455,902 legitimate transactions. The validation partition contains 4,133 fraud and 113,975 legitimate transactions. The fraud rate is approximately 3.499% in both partitions. Test data remains separate and is not used for fitting or validation. `TransactionID` and `isFraud` are retained separately from model features. This public summary omits local file paths and dataset fingerprints.

@@ -1,0 +1,1634 @@
+{
+  "project": "IEEE-CIS Fraud Detection",
+  "week": 2,
+  "source_scope": "cleaned training-fit rows only; no test CSV or test labels read",
+  "training_source": ".\\cleaned_data\\train_cleaned.csv",
+  "fit_key_source": ".\\cleaned_data_v2\\preprocessed\\train_fit_encoded.csv",
+  "split_manifest_source": ".\\cleaned_data_v2\\split_manifest.json",
+  "week1_summary_source": ".\\week1_eda\\eda_summary.json",
+  "rows_in_cleaned_training_source": 590540,
+  "columns_in_cleaned_training_source": 434,
+  "fit_rows": 472432,
+  "fit_fraud_count": 16530,
+  "fit_legitimate_count": 455902,
+  "fit_fraud_rate": 0.03498916246147594,
+  "validation_rows": 118108,
+  "validation_fraud_count": 4133,
+  "validation_fraud_rate": 0.0349933958749619,
+  "random_state": 42,
+  "source_columns_read": [
+    "TransactionID",
+    "TransactionDT",
+    "TransactionAmt",
+    "isFraud",
+    "ProductCD",
+    "card4",
+    "card6",
+    "C1",
+    "C2",
+    "D1",
+    "D2",
+    "V258",
+    "V307"
+  ],
+  "numeric_fields_assessed": [
+    "TransactionAmt",
+    "C1",
+    "C2",
+    "D1",
+    "D2",
+    "V258",
+    "V307"
+  ],
+  "minimum_cell_n_for_rate_ranking": 200,
+  "week1_amount_summary_for_context": {
+    "n": 590540,
+    "min": 0.251,
+    "median": 68.769,
+    "mean": 135.02717637247264,
+    "p75": 125.0,
+    "p90": 275.293,
+    "p99": 1104.0,
+    "max": 31937.391,
+    "missing_count": 0,
+    "nonpositive_count": 0
+  },
+  "amount_quantile_summary": {
+    "amount_deciles": [
+      {
+        "amount_decile": "Q1",
+        "transaction_count": 47742,
+        "fraud_count": 2636,
+        "fraud_rate": 0.05521343890075824,
+        "amount_total": 899512.698,
+        "amount_min": 0.251,
+        "amount_max": 25.95,
+        "amount_share": 0.014099300940714862,
+        "fraud_share": 0.15946763460375077
+      },
+      {
+        "amount_decile": "Q2",
+        "transaction_count": 49220,
+        "fraud_count": 1612,
+        "fraud_rate": 0.03275091426249492,
+        "amount_total": 1555163.772,
+        "amount_min": 25.96,
+        "amount_max": 35.95,
+        "amount_share": 0.02437622290633331,
+        "fraud_share": 0.09751966122202056
+      },
+      {
+        "amount_decile": "Q3",
+        "transaction_count": 52041,
+        "fraud_count": 1676,
+        "fraud_rate": 0.03220537653004362,
+        "amount_total": 2305785.163,
+        "amount_min": 35.96,
+        "amount_max": 49.0,
+        "amount_share": 0.036141745402878435,
+        "fraud_share": 0.1013914095583787
+      },
+      {
+        "amount_decile": "Q4",
+        "transaction_count": 47785,
+        "fraud_count": 927,
+        "fraud_rate": 0.019399393114994244,
+        "amount_total": 2599709.8370000003,
+        "amount_min": 49.001,
+        "amount_max": 57.95,
+        "amount_share": 0.04074883148608958,
+        "fraud_share": 0.056079854809437384
+      },
+      {
+        "amount_decile": "Q5",
+        "transaction_count": 39431,
+        "fraud_count": 1125,
+        "fraud_rate": 0.0285308513606046,
+        "amount_total": 2397197.627,
+        "amount_min": 57.951,
+        "amount_max": 68.561,
+        "amount_share": 0.037574578805379504,
+        "fraud_share": 0.06805807622504537
+      },
+      {
+        "amount_decile": "Q6",
+        "transaction_count": 58564,
+        "fraud_count": 2099,
+        "fraud_rate": 0.035841131070282084,
+        "amount_total": 5159501.167,
+        "amount_min": 68.612,
+        "amount_max": 100.0,
+        "amount_share": 0.08087196525323818,
+        "fraud_share": 0.12698124621899576
+      },
+      {
+        "amount_decile": "Q7",
+        "transaction_count": 57870,
+        "fraud_count": 1152,
+        "fraud_rate": 0.019906687402799376,
+        "amount_total": 6461489.137,
+        "amount_min": 100.01,
+        "amount_max": 117.0,
+        "amount_share": 0.10127981524917057,
+        "fraud_share": 0.06969147005444647
+      },
+      {
+        "amount_decile": "Q8",
+        "transaction_count": 25832,
+        "fraud_count": 1092,
+        "fraud_rate": 0.0422731495819139,
+        "amount_total": 3721372.971,
+        "amount_min": 117.008,
+        "amount_max": 159.95,
+        "amount_share": 0.05833020206099543,
+        "fraud_share": 0.06606170598911071
+      },
+      {
+        "amount_decile": "Q9",
+        "transaction_count": 46703,
+        "fraud_count": 1784,
+        "fraud_rate": 0.0381988309102199,
+        "amount_total": 9723189.08,
+        "amount_min": 159.96,
+        "amount_max": 275.97,
+        "amount_share": 0.15240492907682385,
+        "fraud_share": 0.10792498487598307
+      },
+      {
+        "amount_decile": "Q10",
+        "transaction_count": 47244,
+        "fraud_count": 2427,
+        "fraud_rate": 0.051371602743205486,
+        "amount_total": 28975468.396,
+        "amount_min": 275.99,
+        "amount_max": 31937.391,
+        "amount_share": 0.4541724088183762,
+        "fraud_share": 0.14682395644283122
+      }
+    ],
+    "total_amount": 63798389.848000005
+  },
+  "relative_time_summary": {
+    "daily_rows": 182,
+    "relative_days": 182,
+    "30_day_periods": [
+      {
+        "relative_30d_period": 0,
+        "transaction_count": 107361,
+        "fraud_count": 2698,
+        "fraud_rate": 0.025130168310652845
+      },
+      {
+        "relative_30d_period": 1,
+        "transaction_count": 71387,
+        "fraud_count": 2864,
+        "fraud_rate": 0.040119349461386525
+      },
+      {
+        "relative_30d_period": 2,
+        "transaction_count": 73977,
+        "fraud_count": 2999,
+        "fraud_rate": 0.040539627181421255
+      },
+      {
+        "relative_30d_period": 3,
+        "transaction_count": 78816,
+        "fraud_count": 3113,
+        "fraud_rate": 0.039497056435241575
+      },
+      {
+        "relative_30d_period": 4,
+        "transaction_count": 66902,
+        "fraud_count": 2294,
+        "fraud_rate": 0.034288959971301304
+      },
+      {
+        "relative_30d_period": 5,
+        "transaction_count": 69555,
+        "fraud_count": 2369,
+        "fraud_rate": 0.03405937747106606
+      },
+      {
+        "relative_30d_period": 6,
+        "transaction_count": 4434,
+        "fraud_count": 193,
+        "fraud_rate": 0.043527289129454215
+      }
+    ],
+    "supported_30_day_periods": 7
+  },
+  "productcd_card6_summary": [
+    {
+      "ProductCD": "C",
+      "card6": "Missing",
+      "transaction_count": 156,
+      "fraud_count": 14,
+      "fraud_rate": 0.08974358974358974,
+      "ci_low": 0.05421101444877175,
+      "ci_high": 0.1449954933973123
+    },
+    {
+      "ProductCD": "C",
+      "card6": "charge card",
+      "transaction_count": 10,
+      "fraud_count": 0,
+      "fraud_rate": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.2775327998628892
+    },
+    {
+      "ProductCD": "C",
+      "card6": "credit",
+      "transaction_count": 22002,
+      "fraud_count": 3669,
+      "fraud_rate": 0.1667575674938642,
+      "ci_low": 0.16189038145691564,
+      "ci_high": 0.1717410987370777
+    },
+    {
+      "ProductCD": "C",
+      "card6": "debit",
+      "transaction_count": 32604,
+      "fraud_count": 2671,
+      "fraud_rate": 0.08192246350141087,
+      "ci_low": 0.07899465559703404,
+      "ci_high": 0.08494877701477412
+    },
+    {
+      "ProductCD": "H",
+      "card6": "Missing",
+      "transaction_count": 1,
+      "fraud_count": 0,
+      "fraud_rate": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.7934506856227626
+    },
+    {
+      "ProductCD": "H",
+      "card6": "credit",
+      "transaction_count": 14151,
+      "fraud_count": 702,
+      "fraud_rate": 0.04960780156879373,
+      "ci_low": 0.04615091970394996,
+      "ci_high": 0.05330914580906836
+    },
+    {
+      "ProductCD": "H",
+      "card6": "debit",
+      "transaction_count": 12357,
+      "fraud_count": 533,
+      "fraud_rate": 0.043133446629440804,
+      "ci_low": 0.039691183613970935,
+      "ci_high": 0.04685967640513039
+    },
+    {
+      "ProductCD": "R",
+      "card6": "Missing",
+      "transaction_count": 5,
+      "fraud_count": 0,
+      "fraud_rate": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.43448246478317476
+    },
+    {
+      "ProductCD": "R",
+      "card6": "charge card",
+      "transaction_count": 3,
+      "fraud_count": 0,
+      "fraud_rate": 0.0,
+      "ci_low": 5.551115123125783e-17,
+      "ci_high": 0.5614970317550454
+    },
+    {
+      "ProductCD": "R",
+      "card6": "credit",
+      "transaction_count": 21187,
+      "fraud_count": 834,
+      "fraud_rate": 0.03936376079671497,
+      "ci_low": 0.03682773963640854,
+      "ci_high": 0.04206678949635461
+    },
+    {
+      "ProductCD": "R",
+      "card6": "debit",
+      "transaction_count": 8911,
+      "fraud_count": 309,
+      "fraud_rate": 0.034676242845920774,
+      "ci_low": 0.031073561987402066,
+      "ci_high": 0.03867994531758985
+    },
+    {
+      "ProductCD": "S",
+      "card6": "Missing",
+      "transaction_count": 1,
+      "fraud_count": 0,
+      "fraud_rate": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.7934506856227626
+    },
+    {
+      "ProductCD": "S",
+      "card6": "credit",
+      "transaction_count": 5320,
+      "fraud_count": 309,
+      "fraud_rate": 0.05808270676691729,
+      "ci_low": 0.05211051414090433,
+      "ci_high": 0.06469263704805703
+    },
+    {
+      "ProductCD": "S",
+      "card6": "debit",
+      "transaction_count": 4115,
+      "fraud_count": 252,
+      "fraud_rate": 0.06123936816524909,
+      "ci_low": 0.05431475690862616,
+      "ci_high": 0.06898240417367954
+    },
+    {
+      "ProductCD": "W",
+      "card6": "Missing",
+      "transaction_count": 1134,
+      "fraud_count": 20,
+      "fraud_rate": 0.01763668430335097,
+      "ci_low": 0.011445662825387152,
+      "ci_high": 0.027084712808959334
+    },
+    {
+      "ProductCD": "W",
+      "card6": "credit",
+      "transaction_count": 56432,
+      "fraud_count": 2423,
+      "fraud_rate": 0.04293663169832719,
+      "ci_low": 0.04129499676553711,
+      "ci_high": 0.044640489150083694
+    },
+    {
+      "ProductCD": "W",
+      "card6": "debit",
+      "transaction_count": 294018,
+      "fraud_count": 4794,
+      "fraud_rate": 0.016305124176070853,
+      "ci_low": 0.01585362673415336,
+      "ci_high": 0.016769260773896212
+    },
+    {
+      "ProductCD": "W",
+      "card6": "debit or credit",
+      "transaction_count": 25,
+      "fraud_count": 0,
+      "fraud_rate": 0.0,
+      "ci_low": 1.3877787807814457e-17,
+      "ci_high": 0.13319225093904846
+    }
+  ],
+  "productcd_amount_summary": [
+    {
+      "ProductCD": "C",
+      "amount_decile": "Q1",
+      "transaction_count": 21967,
+      "fraud_count": 2199,
+      "fraud_rate": 0.10010470250830791,
+      "ci_low": 0.09620530843527843,
+      "ci_high": 0.1041439347683074
+    },
+    {
+      "ProductCD": "C",
+      "amount_decile": "Q2",
+      "transaction_count": 9791,
+      "fraud_count": 1120,
+      "fraud_rate": 0.11439076703094679,
+      "ci_low": 0.10823691549427983,
+      "ci_high": 0.12084708430849536
+    },
+    {
+      "ProductCD": "C",
+      "amount_decile": "Q3",
+      "transaction_count": 7522,
+      "fraud_count": 859,
+      "fraud_rate": 0.11419835150226004,
+      "ci_low": 0.1072068865621126,
+      "ci_high": 0.12158367037987595
+    },
+    {
+      "ProductCD": "C",
+      "amount_decile": "Q4",
+      "transaction_count": 3006,
+      "fraud_count": 341,
+      "fraud_rate": 0.1134397870924817,
+      "ci_low": 0.10259285497616528,
+      "ci_high": 0.12527345233738277
+    },
+    {
+      "ProductCD": "C",
+      "amount_decile": "Q5",
+      "transaction_count": 3295,
+      "fraud_count": 476,
+      "fraud_rate": 0.14446130500758725,
+      "ci_low": 0.13287145106401693,
+      "ci_high": 0.15687919950601642
+    },
+    {
+      "ProductCD": "C",
+      "amount_decile": "Q6",
+      "transaction_count": 5254,
+      "fraud_count": 718,
+      "fraud_rate": 0.1366577845451085,
+      "ci_low": 0.12763507103520327,
+      "ci_high": 0.14621142473639853
+    },
+    {
+      "ProductCD": "C",
+      "amount_decile": "Q7",
+      "transaction_count": 1108,
+      "fraud_count": 174,
+      "fraud_rate": 0.15703971119133575,
+      "ci_low": 0.1368055858206632,
+      "ci_high": 0.17964372089423902
+    },
+    {
+      "ProductCD": "C",
+      "amount_decile": "Q8",
+      "transaction_count": 1764,
+      "fraud_count": 295,
+      "fraud_rate": 0.16723356009070295,
+      "ci_low": 0.15054561408513858,
+      "ci_high": 0.18536768620415242
+    },
+    {
+      "ProductCD": "C",
+      "amount_decile": "Q9",
+      "transaction_count": 957,
+      "fraud_count": 145,
+      "fraud_rate": 0.15151515151515152,
+      "ci_low": 0.13019454386782514,
+      "ci_high": 0.17562225465099152
+    },
+    {
+      "ProductCD": "C",
+      "amount_decile": "Q10",
+      "transaction_count": 108,
+      "fraud_count": 27,
+      "fraud_rate": 0.25,
+      "ci_low": 0.17787832878337295,
+      "ci_high": 0.3392953510899055
+    },
+    {
+      "ProductCD": "H",
+      "amount_decile": "Q1",
+      "transaction_count": 5003,
+      "fraud_count": 74,
+      "fraud_rate": 0.014791125324805117,
+      "ci_low": 0.01179901037949566,
+      "ci_high": 0.018527785479636398
+    },
+    {
+      "ProductCD": "H",
+      "amount_decile": "Q2",
+      "transaction_count": 1724,
+      "fraud_count": 8,
+      "fraud_rate": 0.004640371229698376,
+      "ci_low": 0.0023532049383423836,
+      "ci_high": 0.009130174349382627
+    },
+    {
+      "ProductCD": "H",
+      "amount_decile": "Q3",
+      "transaction_count": 1287,
+      "fraud_count": 13,
+      "fraud_rate": 0.010101010101010102,
+      "ci_low": 0.005912520444654789,
+      "ci_high": 0.017205313753169263
+    },
+    {
+      "ProductCD": "H",
+      "amount_decile": "Q4",
+      "transaction_count": 7909,
+      "fraud_count": 189,
+      "fraud_rate": 0.023896826400303453,
+      "ci_low": 0.020754918038139017,
+      "ci_high": 0.027501003783097958
+    },
+    {
+      "ProductCD": "H",
+      "amount_decile": "Q5",
+      "transaction_count": 339,
+      "fraud_count": 14,
+      "fraud_rate": 0.04129793510324484,
+      "ci_low": 0.024757183500293208,
+      "ci_high": 0.06811798664459638
+    },
+    {
+      "ProductCD": "H",
+      "amount_decile": "Q6",
+      "transaction_count": 6885,
+      "fraud_count": 284,
+      "fraud_rate": 0.041249092229484384,
+      "ci_low": 0.03680186955792087,
+      "ci_high": 0.046207945987839706
+    },
+    {
+      "ProductCD": "H",
+      "amount_decile": "Q7",
+      "transaction_count": 41,
+      "fraud_count": 2,
+      "fraud_rate": 0.04878048780487805,
+      "ci_low": 0.013480945365169042,
+      "ci_high": 0.16138978870370846
+    },
+    {
+      "ProductCD": "H",
+      "amount_decile": "Q8",
+      "transaction_count": 1951,
+      "fraud_count": 317,
+      "fraud_rate": 0.16248077908764735,
+      "ci_low": 0.14677784624414897,
+      "ci_high": 0.17951022992827248
+    },
+    {
+      "ProductCD": "H",
+      "amount_decile": "Q9",
+      "transaction_count": 740,
+      "fraud_count": 88,
+      "fraud_rate": 0.11891891891891893,
+      "ci_low": 0.09754215923441198,
+      "ci_high": 0.14423175197755453
+    },
+    {
+      "ProductCD": "H",
+      "amount_decile": "Q10",
+      "transaction_count": 630,
+      "fraud_count": 246,
+      "fraud_rate": 0.3904761904761905,
+      "ci_low": 0.3531545702959633,
+      "ci_high": 0.4291253704059932
+    },
+    {
+      "ProductCD": "R",
+      "amount_decile": "Q1",
+      "transaction_count": 458,
+      "fraud_count": 11,
+      "fraud_rate": 0.024017467248908297,
+      "ci_low": 0.013462883495830262,
+      "ci_high": 0.04249021107190288
+    },
+    {
+      "ProductCD": "R",
+      "amount_decile": "Q4",
+      "transaction_count": 2789,
+      "fraud_count": 33,
+      "fraud_rate": 0.011832197920401577,
+      "ci_low": 0.008437567517419108,
+      "ci_high": 0.01656974487409251
+    },
+    {
+      "ProductCD": "R",
+      "amount_decile": "Q6",
+      "transaction_count": 10875,
+      "fraud_count": 170,
+      "fraud_rate": 0.015632183908045976,
+      "ci_low": 0.013465937766719897,
+      "ci_high": 0.018140503059008228
+    },
+    {
+      "ProductCD": "R",
+      "amount_decile": "Q8",
+      "transaction_count": 5934,
+      "fraud_count": 129,
+      "fraud_rate": 0.021739130434782608,
+      "ci_low": 0.018326439809077832,
+      "ci_high": 0.025770638335662344
+    },
+    {
+      "ProductCD": "R",
+      "amount_decile": "Q9",
+      "transaction_count": 6823,
+      "fraud_count": 465,
+      "fraud_rate": 0.06815183936684743,
+      "ci_low": 0.062411990661996763,
+      "ci_high": 0.0743776893757774
+    },
+    {
+      "ProductCD": "R",
+      "amount_decile": "Q10",
+      "transaction_count": 3227,
+      "fraud_count": 335,
+      "fraud_rate": 0.10381158971180664,
+      "ci_low": 0.09375460435981561,
+      "ci_high": 0.11481070824040601
+    },
+    {
+      "ProductCD": "S",
+      "amount_decile": "Q1",
+      "transaction_count": 3857,
+      "fraud_count": 209,
+      "fraud_rate": 0.054187192118226604,
+      "ci_low": 0.04747601992009616,
+      "ci_high": 0.06178551369116664
+    },
+    {
+      "ProductCD": "S",
+      "amount_decile": "Q2",
+      "transaction_count": 902,
+      "fraud_count": 81,
+      "fraud_rate": 0.08980044345898004,
+      "ci_low": 0.07284106049092937,
+      "ci_high": 0.11023894452076602
+    },
+    {
+      "ProductCD": "S",
+      "amount_decile": "Q3",
+      "transaction_count": 489,
+      "fraud_count": 36,
+      "fraud_rate": 0.0736196319018405,
+      "ci_low": 0.05364865604987398,
+      "ci_high": 0.10023746181483029
+    },
+    {
+      "ProductCD": "S",
+      "amount_decile": "Q4",
+      "transaction_count": 1377,
+      "fraud_count": 52,
+      "fraud_rate": 0.03776325344952796,
+      "ci_low": 0.028912981171997143,
+      "ci_high": 0.049185382787031134
+    },
+    {
+      "ProductCD": "S",
+      "amount_decile": "Q5",
+      "transaction_count": 141,
+      "fraud_count": 21,
+      "fraud_rate": 0.14893617021276595,
+      "ci_low": 0.09952357238101192,
+      "ci_high": 0.21697047009782952
+    },
+    {
+      "ProductCD": "S",
+      "amount_decile": "Q6",
+      "transaction_count": 1042,
+      "fraud_count": 87,
+      "fraud_rate": 0.08349328214971209,
+      "ci_low": 0.06818828674203202,
+      "ci_high": 0.10185800212973513
+    },
+    {
+      "ProductCD": "S",
+      "amount_decile": "Q7",
+      "transaction_count": 797,
+      "fraud_count": 2,
+      "fraud_rate": 0.002509410288582183,
+      "ci_low": 0.0006884407690729549,
+      "ci_high": 0.009103083800897893
+    },
+    {
+      "ProductCD": "S",
+      "amount_decile": "Q8",
+      "transaction_count": 375,
+      "fraud_count": 12,
+      "fraud_rate": 0.032,
+      "ci_low": 0.01839839734675399,
+      "ci_high": 0.055092658535467985
+    },
+    {
+      "ProductCD": "S",
+      "amount_decile": "Q9",
+      "transaction_count": 272,
+      "fraud_count": 47,
+      "fraud_rate": 0.17279411764705882,
+      "ci_low": 0.13250290377259072,
+      "ci_high": 0.22219888485264355
+    },
+    {
+      "ProductCD": "S",
+      "amount_decile": "Q10",
+      "transaction_count": 184,
+      "fraud_count": 14,
+      "fraud_rate": 0.07608695652173914,
+      "ci_low": 0.04586170406579351,
+      "ci_high": 0.12365070826639932
+    },
+    {
+      "ProductCD": "W",
+      "amount_decile": "Q1",
+      "transaction_count": 16457,
+      "fraud_count": 143,
+      "fraud_rate": 0.008689311539162666,
+      "ci_low": 0.007381524673083985,
+      "ci_high": 0.010226412293308451
+    },
+    {
+      "ProductCD": "W",
+      "amount_decile": "Q2",
+      "transaction_count": 36803,
+      "fraud_count": 403,
+      "fraud_rate": 0.01095019427764041,
+      "ci_low": 0.009936838280811497,
+      "ci_high": 0.012065632638263173
+    },
+    {
+      "ProductCD": "W",
+      "amount_decile": "Q3",
+      "transaction_count": 42743,
+      "fraud_count": 768,
+      "fraud_rate": 0.017967854385513418,
+      "ci_low": 0.01675119177914787,
+      "ci_high": 0.019271152943188388
+    },
+    {
+      "ProductCD": "W",
+      "amount_decile": "Q4",
+      "transaction_count": 32704,
+      "fraud_count": 312,
+      "fraud_rate": 0.009540117416829745,
+      "ci_low": 0.008542688512375008,
+      "ci_high": 0.010652753033688163
+    },
+    {
+      "ProductCD": "W",
+      "amount_decile": "Q5",
+      "transaction_count": 35656,
+      "fraud_count": 614,
+      "fraud_rate": 0.017220103208436168,
+      "ci_low": 0.015920889912153405,
+      "ci_high": 0.018623331498454982
+    },
+    {
+      "ProductCD": "W",
+      "amount_decile": "Q6",
+      "transaction_count": 34508,
+      "fraud_count": 840,
+      "fraud_rate": 0.024342181523125072,
+      "ci_low": 0.022768369287092603,
+      "ci_high": 0.026021883207253217
+    },
+    {
+      "ProductCD": "W",
+      "amount_decile": "Q7",
+      "transaction_count": 55924,
+      "fraud_count": 974,
+      "fraud_rate": 0.017416493813031973,
+      "ci_low": 0.016364959519365816,
+      "ci_high": 0.01853432155261731
+    },
+    {
+      "ProductCD": "W",
+      "amount_decile": "Q8",
+      "transaction_count": 15808,
+      "fraud_count": 339,
+      "fraud_rate": 0.02144483805668016,
+      "ci_low": 0.019300178611100366,
+      "ci_high": 0.0238220257568372
+    },
+    {
+      "ProductCD": "W",
+      "amount_decile": "Q9",
+      "transaction_count": 37911,
+      "fraud_count": 1039,
+      "fraud_rate": 0.027406293687847853,
+      "ci_low": 0.025810112356555257,
+      "ci_high": 0.029098239590050718
+    },
+    {
+      "ProductCD": "W",
+      "amount_decile": "Q10",
+      "transaction_count": 43095,
+      "fraud_count": 1805,
+      "fraud_rate": 0.04188420930502378,
+      "ci_low": 0.04003334882690021,
+      "ci_high": 0.043816734760000434
+    }
+  ],
+  "time_amount_summary": [
+    {
+      "relative_30d_period": 0,
+      "amount_decile": "Q1",
+      "transaction_count": 11967,
+      "fraud_count": 365,
+      "fraud_rate": 0.03050054316035765,
+      "ci_low": 0.02756707989336862,
+      "ci_high": 0.03373533241783648,
+      "period_label": "Days 0–29"
+    },
+    {
+      "relative_30d_period": 0,
+      "amount_decile": "Q2",
+      "transaction_count": 9542,
+      "fraud_count": 242,
+      "fraud_rate": 0.025361559421504927,
+      "ci_low": 0.022392865637199666,
+      "ci_high": 0.028712263326566165,
+      "period_label": "Days 0–29"
+    },
+    {
+      "relative_30d_period": 0,
+      "amount_decile": "Q3",
+      "transaction_count": 9433,
+      "fraud_count": 271,
+      "fraud_rate": 0.02872893035089579,
+      "ci_low": 0.025545045185082573,
+      "ci_high": 0.03229649652170234,
+      "period_label": "Days 0–29"
+    },
+    {
+      "relative_30d_period": 0,
+      "amount_decile": "Q4",
+      "transaction_count": 13803,
+      "fraud_count": 185,
+      "fraud_rate": 0.013402883431138159,
+      "ci_low": 0.011615402324414817,
+      "ci_high": 0.015461135052775117,
+      "period_label": "Days 0–29"
+    },
+    {
+      "relative_30d_period": 0,
+      "amount_decile": "Q5",
+      "transaction_count": 6681,
+      "fraud_count": 190,
+      "fraud_rate": 0.02843885645861398,
+      "ci_low": 0.02471595442684423,
+      "ci_high": 0.032703725783254506,
+      "period_label": "Days 0–29"
+    },
+    {
+      "relative_30d_period": 0,
+      "amount_decile": "Q6",
+      "transaction_count": 18464,
+      "fraud_count": 359,
+      "fraud_rate": 0.01944324090121317,
+      "ci_low": 0.0175492832083897,
+      "ci_high": 0.021537117897567647,
+      "period_label": "Days 0–29"
+    },
+    {
+      "relative_30d_period": 0,
+      "amount_decile": "Q7",
+      "transaction_count": 9120,
+      "fraud_count": 159,
+      "fraud_rate": 0.017434210526315788,
+      "ci_low": 0.014944113944151292,
+      "ci_high": 0.02033066151893461,
+      "period_label": "Days 0–29"
+    },
+    {
+      "relative_30d_period": 0,
+      "amount_decile": "Q8",
+      "transaction_count": 7634,
+      "fraud_count": 270,
+      "fraud_rate": 0.03536809012313335,
+      "ci_low": 0.03145281601954434,
+      "ci_high": 0.039750738250704264,
+      "period_label": "Days 0–29"
+    },
+    {
+      "relative_30d_period": 0,
+      "amount_decile": "Q9",
+      "transaction_count": 10970,
+      "fraud_count": 318,
+      "fraud_rate": 0.028988149498632633,
+      "ci_low": 0.02600970309325577,
+      "ci_high": 0.03229635693337184,
+      "period_label": "Days 0–29"
+    },
+    {
+      "relative_30d_period": 0,
+      "amount_decile": "Q10",
+      "transaction_count": 9747,
+      "fraud_count": 339,
+      "fraud_rate": 0.034779932286857496,
+      "ci_low": 0.03132191999945688,
+      "ci_high": 0.038604502422671064,
+      "period_label": "Days 0–29"
+    },
+    {
+      "relative_30d_period": 1,
+      "amount_decile": "Q1",
+      "transaction_count": 7266,
+      "fraud_count": 492,
+      "fraud_rate": 0.06771263418662263,
+      "ci_low": 0.06216096694707013,
+      "ci_high": 0.07372115158553136,
+      "period_label": "Days 30–59"
+    },
+    {
+      "relative_30d_period": 1,
+      "amount_decile": "Q2",
+      "transaction_count": 8256,
+      "fraud_count": 273,
+      "fraud_rate": 0.03306686046511628,
+      "ci_low": 0.02942173351078013,
+      "ci_high": 0.037146306755115995,
+      "period_label": "Days 30–59"
+    },
+    {
+      "relative_30d_period": 1,
+      "amount_decile": "Q3",
+      "transaction_count": 8748,
+      "fraud_count": 277,
+      "fraud_rate": 0.03166438042981253,
+      "ci_low": 0.028195622652853587,
+      "ci_high": 0.03554427271036326,
+      "period_label": "Days 30–59"
+    },
+    {
+      "relative_30d_period": 1,
+      "amount_decile": "Q4",
+      "transaction_count": 6476,
+      "fraud_count": 156,
+      "fraud_rate": 0.024088943792464484,
+      "ci_low": 0.020627244874644665,
+      "ci_high": 0.02811491352967161,
+      "period_label": "Days 30–59"
+    },
+    {
+      "relative_30d_period": 1,
+      "amount_decile": "Q5",
+      "transaction_count": 6508,
+      "fraud_count": 203,
+      "fraud_rate": 0.03119237861094038,
+      "ci_low": 0.02723768549388775,
+      "ci_high": 0.03570018874835726,
+      "period_label": "Days 30–59"
+    },
+    {
+      "relative_30d_period": 1,
+      "amount_decile": "Q6",
+      "transaction_count": 7893,
+      "fraud_count": 371,
+      "fraud_rate": 0.0470036741416445,
+      "ci_low": 0.04255081606722493,
+      "ci_high": 0.0518972569642523,
+      "period_label": "Days 30–59"
+    },
+    {
+      "relative_30d_period": 1,
+      "amount_decile": "Q7",
+      "transaction_count": 8663,
+      "fraud_count": 162,
+      "fraud_rate": 0.018700219323559968,
+      "ci_low": 0.016053631599952833,
+      "ci_high": 0.021773466123985907,
+      "period_label": "Days 30–59"
+    },
+    {
+      "relative_30d_period": 1,
+      "amount_decile": "Q8",
+      "transaction_count": 3316,
+      "fraud_count": 192,
+      "fraud_rate": 0.05790108564535585,
+      "ci_low": 0.050451430576345165,
+      "ci_high": 0.06637386473714457,
+      "period_label": "Days 30–59"
+    },
+    {
+      "relative_30d_period": 1,
+      "amount_decile": "Q9",
+      "transaction_count": 6839,
+      "fraud_count": 342,
+      "fraud_rate": 0.05000731101038163,
+      "ci_low": 0.04508951078264368,
+      "ci_high": 0.0554303482496066,
+      "period_label": "Days 30–59"
+    },
+    {
+      "relative_30d_period": 1,
+      "amount_decile": "Q10",
+      "transaction_count": 7422,
+      "fraud_count": 396,
+      "fraud_rate": 0.05335489086499596,
+      "ci_low": 0.04846913576604361,
+      "ci_high": 0.05870275353888677,
+      "period_label": "Days 30–59"
+    },
+    {
+      "relative_30d_period": 2,
+      "amount_decile": "Q1",
+      "transaction_count": 7521,
+      "fraud_count": 524,
+      "fraud_rate": 0.069671586225236,
+      "ci_low": 0.06413472569676236,
+      "ci_high": 0.07564781518158599,
+      "period_label": "Days 60–89"
+    },
+    {
+      "relative_30d_period": 2,
+      "amount_decile": "Q2",
+      "transaction_count": 7949,
+      "fraud_count": 285,
+      "fraud_rate": 0.035853566486350484,
+      "ci_low": 0.03198537028282026,
+      "ci_high": 0.04017015573791189,
+      "period_label": "Days 60–89"
+    },
+    {
+      "relative_30d_period": 2,
+      "amount_decile": "Q3",
+      "transaction_count": 8649,
+      "fraud_count": 269,
+      "fraud_rate": 0.031101861486877096,
+      "ci_low": 0.027646471315803684,
+      "ci_high": 0.03497358955083127,
+      "period_label": "Days 60–89"
+    },
+    {
+      "relative_30d_period": 2,
+      "amount_decile": "Q4",
+      "transaction_count": 7006,
+      "fraud_count": 164,
+      "fraud_rate": 0.023408506994005138,
+      "ci_low": 0.020120598051582922,
+      "ci_high": 0.027218769146676314,
+      "period_label": "Days 60–89"
+    },
+    {
+      "relative_30d_period": 2,
+      "amount_decile": "Q5",
+      "transaction_count": 6564,
+      "fraud_count": 191,
+      "fraud_rate": 0.02909811090798294,
+      "ci_low": 0.02529925093132014,
+      "ci_high": 0.03344782164036993,
+      "period_label": "Days 60–89"
+    },
+    {
+      "relative_30d_period": 2,
+      "amount_decile": "Q6",
+      "transaction_count": 7993,
+      "fraud_count": 394,
+      "fraud_rate": 0.0492931314900538,
+      "ci_low": 0.04476003826733655,
+      "ci_high": 0.054259238643208606,
+      "period_label": "Days 60–89"
+    },
+    {
+      "relative_30d_period": 2,
+      "amount_decile": "Q7",
+      "transaction_count": 9683,
+      "fraud_count": 180,
+      "fraud_rate": 0.018589280181761852,
+      "ci_low": 0.016083663134778797,
+      "ci_high": 0.021476718168807578,
+      "period_label": "Days 60–89"
+    },
+    {
+      "relative_30d_period": 2,
+      "amount_decile": "Q8",
+      "transaction_count": 3594,
+      "fraud_count": 190,
+      "fraud_rate": 0.05286588759042849,
+      "ci_low": 0.046015991344281866,
+      "ci_high": 0.06067060483122339,
+      "period_label": "Days 60–89"
+    },
+    {
+      "relative_30d_period": 2,
+      "amount_decile": "Q9",
+      "transaction_count": 7094,
+      "fraud_count": 370,
+      "fraud_rate": 0.052156752184945025,
+      "ci_low": 0.04722086107834453,
+      "ci_high": 0.05757740232838465,
+      "period_label": "Days 60–89"
+    },
+    {
+      "relative_30d_period": 2,
+      "amount_decile": "Q10",
+      "transaction_count": 7924,
+      "fraud_count": 432,
+      "fraud_rate": 0.05451792024230187,
+      "ci_low": 0.04973145808030653,
+      "ci_high": 0.059736101699804145,
+      "period_label": "Days 60–89"
+    },
+    {
+      "relative_30d_period": 3,
+      "amount_decile": "Q1",
+      "transaction_count": 7366,
+      "fraud_count": 474,
+      "fraud_rate": 0.06434971490632636,
+      "ci_low": 0.0589701155737694,
+      "ci_high": 0.0701834712624128,
+      "period_label": "Days 90–119"
+    },
+    {
+      "relative_30d_period": 3,
+      "amount_decile": "Q2",
+      "transaction_count": 8327,
+      "fraud_count": 341,
+      "fraud_rate": 0.04095112285336856,
+      "ci_low": 0.03690197300924037,
+      "ci_high": 0.045423619454714785,
+      "period_label": "Days 90–119"
+    },
+    {
+      "relative_30d_period": 3,
+      "amount_decile": "Q3",
+      "transaction_count": 8917,
+      "fraud_count": 353,
+      "fraud_rate": 0.03958730514747112,
+      "ci_low": 0.0357344676870254,
+      "ci_high": 0.04383666493509082,
+      "period_label": "Days 90–119"
+    },
+    {
+      "relative_30d_period": 3,
+      "amount_decile": "Q4",
+      "transaction_count": 7241,
+      "fraud_count": 152,
+      "fraud_rate": 0.02099157574920591,
+      "ci_low": 0.01793477617610455,
+      "ci_high": 0.024556348104592157,
+      "period_label": "Days 90–119"
+    },
+    {
+      "relative_30d_period": 3,
+      "amount_decile": "Q5",
+      "transaction_count": 7050,
+      "fraud_count": 189,
+      "fraud_rate": 0.026808510638297874,
+      "ci_low": 0.023288020915145417,
+      "ci_high": 0.030844392047327487,
+      "period_label": "Days 90–119"
+    },
+    {
+      "relative_30d_period": 3,
+      "amount_decile": "Q6",
+      "transaction_count": 8516,
+      "fraud_count": 340,
+      "fraud_rate": 0.03992484734617191,
+      "ci_low": 0.03596986133084293,
+      "ci_high": 0.04429471426319055,
+      "period_label": "Days 90–119"
+    },
+    {
+      "relative_30d_period": 3,
+      "amount_decile": "Q7",
+      "transaction_count": 10934,
+      "fraud_count": 258,
+      "fraud_rate": 0.023596122187671483,
+      "ci_low": 0.0209139478761054,
+      "ci_high": 0.026612930327223665,
+      "period_label": "Days 90–119"
+    },
+    {
+      "relative_30d_period": 3,
+      "amount_decile": "Q8",
+      "transaction_count": 3992,
+      "fraud_count": 159,
+      "fraud_rate": 0.03982965931863727,
+      "ci_low": 0.03419246116019687,
+      "ci_high": 0.04635164003536963,
+      "period_label": "Days 90–119"
+    },
+    {
+      "relative_30d_period": 3,
+      "amount_decile": "Q9",
+      "transaction_count": 8077,
+      "fraud_count": 288,
+      "fraud_rate": 0.0356568032685403,
+      "ci_low": 0.03182849209917418,
+      "ci_high": 0.0399265920434264,
+      "period_label": "Days 90–119"
+    },
+    {
+      "relative_30d_period": 3,
+      "amount_decile": "Q10",
+      "transaction_count": 8396,
+      "fraud_count": 559,
+      "fraud_rate": 0.06657932348737494,
+      "ci_low": 0.06144270358926573,
+      "ci_high": 0.07211237174404853,
+      "period_label": "Days 90–119"
+    },
+    {
+      "relative_30d_period": 4,
+      "amount_decile": "Q1",
+      "transaction_count": 6479,
+      "fraud_count": 298,
+      "fraud_rate": 0.04599475227658589,
+      "ci_low": 0.04115756859981874,
+      "ci_high": 0.051369984731681737,
+      "period_label": "Days 120–149"
+    },
+    {
+      "relative_30d_period": 4,
+      "amount_decile": "Q2",
+      "transaction_count": 7248,
+      "fraud_count": 203,
+      "fraud_rate": 0.028007726269315674,
+      "ci_low": 0.024452059684002363,
+      "ci_high": 0.032063442088611296,
+      "period_label": "Days 120–149"
+    },
+    {
+      "relative_30d_period": 4,
+      "amount_decile": "Q3",
+      "transaction_count": 7841,
+      "fraud_count": 242,
+      "fraud_rate": 0.03086341027930111,
+      "ci_low": 0.027259142589839747,
+      "ci_high": 0.03492713120313386,
+      "period_label": "Days 120–149"
+    },
+    {
+      "relative_30d_period": 4,
+      "amount_decile": "Q4",
+      "transaction_count": 6364,
+      "fraud_count": 142,
+      "fraud_rate": 0.022313010685103708,
+      "ci_low": 0.018962055534398455,
+      "ci_high": 0.026240303959332016,
+      "period_label": "Days 120–149"
+    },
+    {
+      "relative_30d_period": 4,
+      "amount_decile": "Q5",
+      "transaction_count": 6043,
+      "fraud_count": 169,
+      "fraud_rate": 0.027966241932814828,
+      "ci_low": 0.02409963713583953,
+      "ci_high": 0.032432597279210426,
+      "period_label": "Days 120–149"
+    },
+    {
+      "relative_30d_period": 4,
+      "amount_decile": "Q6",
+      "transaction_count": 7432,
+      "fraud_count": 343,
+      "fraud_rate": 0.04615177610333692,
+      "ci_low": 0.04161159479535188,
+      "ci_high": 0.051160885984530335,
+      "period_label": "Days 120–149"
+    },
+    {
+      "relative_30d_period": 4,
+      "amount_decile": "Q7",
+      "transaction_count": 9141,
+      "fraud_count": 174,
+      "fraud_rate": 0.019035116508040694,
+      "ci_low": 0.01642919019640416,
+      "ci_high": 0.02204511910737541,
+      "period_label": "Days 120–149"
+    },
+    {
+      "relative_30d_period": 4,
+      "amount_decile": "Q8",
+      "transaction_count": 3314,
+      "fraud_count": 138,
+      "fraud_rate": 0.04164152082076041,
+      "ci_low": 0.03535405780173815,
+      "ci_high": 0.0489903758591041,
+      "period_label": "Days 120–149"
+    },
+    {
+      "relative_30d_period": 4,
+      "amount_decile": "Q9",
+      "transaction_count": 6560,
+      "fraud_count": 240,
+      "fraud_rate": 0.036585365853658534,
+      "ci_low": 0.032306672530831824,
+      "ci_high": 0.041406481855384016,
+      "period_label": "Days 120–149"
+    },
+    {
+      "relative_30d_period": 4,
+      "amount_decile": "Q10",
+      "transaction_count": 6480,
+      "fraud_count": 345,
+      "fraud_rate": 0.05324074074074074,
+      "ci_low": 0.04803423111293922,
+      "ci_high": 0.058976630153075256,
+      "period_label": "Days 120–149"
+    },
+    {
+      "relative_30d_period": 5,
+      "amount_decile": "Q1",
+      "transaction_count": 6757,
+      "fraud_count": 451,
+      "fraud_rate": 0.0667455971585023,
+      "ci_low": 0.061037471446413576,
+      "ci_high": 0.07294606659955943,
+      "period_label": "Days 150–179"
+    },
+    {
+      "relative_30d_period": 5,
+      "amount_decile": "Q2",
+      "transaction_count": 7416,
+      "fraud_count": 259,
+      "fraud_rate": 0.034924487594390506,
+      "ci_low": 0.03098102896418895,
+      "ci_high": 0.03934951134679437,
+      "period_label": "Days 150–179"
+    },
+    {
+      "relative_30d_period": 5,
+      "amount_decile": "Q3",
+      "transaction_count": 7968,
+      "fraud_count": 242,
+      "fraud_rate": 0.0303714859437751,
+      "ci_low": 0.02682392163710598,
+      "ci_high": 0.03437165799661926,
+      "period_label": "Days 150–179"
+    },
+    {
+      "relative_30d_period": 5,
+      "amount_decile": "Q4",
+      "transaction_count": 6561,
+      "fraud_count": 125,
+      "fraud_rate": 0.01905197378448407,
+      "ci_low": 0.016014489924077602,
+      "ci_high": 0.022652317250622108,
+      "period_label": "Days 150–179"
+    },
+    {
+      "relative_30d_period": 5,
+      "amount_decile": "Q5",
+      "transaction_count": 6204,
+      "fraud_count": 172,
+      "fraud_rate": 0.027724049000644745,
+      "ci_low": 0.023921711628798435,
+      "ci_high": 0.03211088216859112,
+      "period_label": "Days 150–179"
+    },
+    {
+      "relative_30d_period": 5,
+      "amount_decile": "Q6",
+      "transaction_count": 7812,
+      "fraud_count": 253,
+      "fraud_rate": 0.03238607270865335,
+      "ci_low": 0.028684624396102112,
+      "ci_high": 0.03654718225029606,
+      "period_label": "Days 150–179"
+    },
+    {
+      "relative_30d_period": 5,
+      "amount_decile": "Q7",
+      "transaction_count": 9717,
+      "fraud_count": 204,
+      "fraud_rate": 0.020994133991972832,
+      "ci_low": 0.018327193343492545,
+      "ci_high": 0.024039659419751426,
+      "period_label": "Days 150–179"
+    },
+    {
+      "relative_30d_period": 5,
+      "amount_decile": "Q8",
+      "transaction_count": 3712,
+      "fraud_count": 136,
+      "fraud_rate": 0.036637931034482756,
+      "ci_low": 0.03105739819748765,
+      "ci_high": 0.0431765167522203,
+      "period_label": "Days 150–179"
+    },
+    {
+      "relative_30d_period": 5,
+      "amount_decile": "Q9",
+      "transaction_count": 6670,
+      "fraud_count": 200,
+      "fraud_rate": 0.029985007496251874,
+      "ci_low": 0.026154935526513805,
+      "ci_high": 0.03435616011645269,
+      "period_label": "Days 150–179"
+    },
+    {
+      "relative_30d_period": 5,
+      "amount_decile": "Q10",
+      "transaction_count": 6738,
+      "fraud_count": 327,
+      "fraud_rate": 0.04853072128227961,
+      "ci_low": 0.043652142587213776,
+      "ci_high": 0.05392378868301904,
+      "period_label": "Days 150–179"
+    },
+    {
+      "relative_30d_period": 6,
+      "amount_decile": "Q1",
+      "transaction_count": 386,
+      "fraud_count": 32,
+      "fraud_rate": 0.08290155440414508,
+      "ci_low": 0.05933356728985957,
+      "ci_high": 0.11468963441352191,
+      "period_label": "Days 180–209"
+    },
+    {
+      "relative_30d_period": 6,
+      "amount_decile": "Q2",
+      "transaction_count": 482,
+      "fraud_count": 9,
+      "fraud_rate": 0.01867219917012448,
+      "ci_low": 0.009853992037732313,
+      "ci_high": 0.035101946621168736,
+      "period_label": "Days 180–209"
+    },
+    {
+      "relative_30d_period": 6,
+      "amount_decile": "Q3",
+      "transaction_count": 485,
+      "fraud_count": 22,
+      "fraud_rate": 0.04536082474226804,
+      "ci_low": 0.03014379583322572,
+      "ci_high": 0.06772322824470187,
+      "period_label": "Days 180–209"
+    },
+    {
+      "relative_30d_period": 6,
+      "amount_decile": "Q4",
+      "transaction_count": 334,
+      "fraud_count": 3,
+      "fraud_rate": 0.008982035928143712,
+      "ci_low": 0.0030593125992502673,
+      "ci_high": 0.026071093287131426,
+      "period_label": "Days 180–209"
+    },
+    {
+      "relative_30d_period": 6,
+      "amount_decile": "Q5",
+      "transaction_count": 381,
+      "fraud_count": 11,
+      "fraud_rate": 0.028871391076115485,
+      "ci_low": 0.01619637067196625,
+      "ci_high": 0.05095195295169565,
+      "period_label": "Days 180–209"
+    },
+    {
+      "relative_30d_period": 6,
+      "amount_decile": "Q6",
+      "transaction_count": 454,
+      "fraud_count": 39,
+      "fraud_rate": 0.08590308370044053,
+      "ci_low": 0.06347548601883157,
+      "ci_high": 0.11527953330925847,
+      "period_label": "Days 180–209"
+    },
+    {
+      "relative_30d_period": 6,
+      "amount_decile": "Q7",
+      "transaction_count": 612,
+      "fraud_count": 15,
+      "fraud_rate": 0.024509803921568627,
+      "ci_low": 0.014908543246264429,
+      "ci_high": 0.04004303290370579,
+      "period_label": "Days 180–209"
+    },
+    {
+      "relative_30d_period": 6,
+      "amount_decile": "Q8",
+      "transaction_count": 270,
+      "fraud_count": 7,
+      "fraud_rate": 0.025925925925925925,
+      "ci_low": 0.012614096484319864,
+      "ci_high": 0.052538415109537634,
+      "period_label": "Days 180–209"
+    },
+    {
+      "relative_30d_period": 6,
+      "amount_decile": "Q9",
+      "transaction_count": 493,
+      "fraud_count": 26,
+      "fraud_rate": 0.05273833671399594,
+      "ci_low": 0.03624115260820374,
+      "ci_high": 0.07615176032068055,
+      "period_label": "Days 180–209"
+    },
+    {
+      "relative_30d_period": 6,
+      "amount_decile": "Q10",
+      "transaction_count": 537,
+      "fraud_count": 29,
+      "fraud_rate": 0.054003724394785846,
+      "ci_low": 0.037861028820703066,
+      "ci_high": 0.07648201536000664,
+      "period_label": "Days 180–209"
+    }
+  ],
+  "numeric_feature_associations": [
+    {
+      "feature": "D2",
+      "point_biserial_r": -0.08332331490349663,
+      "pairwise_rows": 247850,
+      "feature_missing_pct": 47.5374233752159
+    },
+    {
+      "feature": "D1",
+      "point_biserial_r": -0.06711667105359166,
+      "pairwise_rows": 471392,
+      "feature_missing_pct": 0.22013750127002404
+    },
+    {
+      "feature": "V307",
+      "point_biserial_r": 0.0055249333689905925,
+      "pairwise_rows": 472422,
+      "feature_missing_pct": 0.0021167067429810004
+    },
+    {
+      "feature": "TransactionAmt",
+      "point_biserial_r": 0.011065761302837788,
+      "pairwise_rows": 472432,
+      "feature_missing_pct": 0.0
+    },
+    {
+      "feature": "C1",
+      "point_biserial_r": 0.028023164015057313,
+      "pairwise_rows": 472432,
+      "feature_missing_pct": 0.0
+    },
+    {
+      "feature": "C2",
+      "point_biserial_r": 0.034525697356977726,
+      "pairwise_rows": 472432,
+      "feature_missing_pct": 0.0
+    },
+    {
+      "feature": "V258",
+      "point_biserial_r": 0.299590268688413,
+      "pairwise_rows": 104446,
+      "feature_missing_pct": 77.89184475226064
+    }
+  ],
+  "chart_details": [
+    {
+      "title": "Stratified split and class imbalance",
+      "insight": "Fraud remains rare in every partition: 3.499% in train-fit and 3.499% in validation, using the documented v2 counts."
+    },
+    {
+      "title": "Transaction amount exposure by quantile",
+      "insight": "The largest amount-sum share belongs to Q10 (45.4% of the total amount sum); its observed fraud rate is 5.14%."
+    },
+    {
+      "title": "Daily volume and fraud rate over relative time",
+      "insight": "The rolling daily series spans 182 relative days. The largest supported 30-day window contains 3,113 frauds among 78,816 rows; TransactionDT is not a calendar clock."
+    },
+    {
+      "title": "Product category by card type",
+      "insight": "The highest supported ProductCD × card6 cell is C / credit at 16.68% (22,002 rows)."
+    },
+    {
+      "title": "Product category by amount quantile",
+      "insight": "The highest supported cell is ProductCD H / Q10 at 39.05% (630 rows)."
+    },
+    {
+      "title": "Relative time by amount risk heatmap",
+      "insight": "The highest supported time × amount cell is elapsed window 7 / Q6 at 8.59% (454 rows)."
+    },
+    {
+      "title": "Numeric field associations with fraud",
+      "insight": "Among selected numeric fields, V258 has the largest absolute point-biserial association (r=0.300; n=104,446)."
+    }
+  ],
+  "charts": [
+    ".\\week2_visualization\\charts\\01_stratified_split_class_balance.png",
+    ".\\week2_visualization\\charts\\02_amount_decile_exposure_and_risk.png",
+    ".\\week2_visualization\\charts\\03_relative_time_daily_volume_and_fraud_rate.png",
+    ".\\week2_visualization\\charts\\04_productcd_by_card6_fraud_rate.png",
+    ".\\week2_visualization\\charts\\05_productcd_by_amount_quantile_fraud_rate.png",
+    ".\\week2_visualization\\charts\\06_relative_time_by_amount_risk_heatmap.png",
+    ".\\week2_visualization\\charts\\07_numeric_feature_association_with_fraud.png"
+  ],
+  "findings": [
+    {
+      "finding": "The v2 split retained nearly identical fraud rates: 3.499% in 472,432 fit rows and 3.499% in 118,108 validation rows.",
+      "business_implication": "The held-out validation partition preserves the rare-event mix, so later model evaluation can compare performance without a large class-rate shift.",
+      "evidence": "split_manifest.json: fit fraud=16,530; validation fraud=4,133; random_state=42."
+    },
+    {
+      "finding": "Q10 contributes 45.4% of the total transaction-amount sum; its observed fraud rate is 5.14% across 47,244 fit rows.",
+      "business_implication": "Amount exposure and fraud frequency are different views. Monitoring should retain both, rather than treating the largest-amount segment as automatically the highest-rate segment.",
+      "evidence": "Training-fit amount quantiles; amount sums and fraud rates are computed directly from the selected rows."
+    },
+    {
+      "finding": "Across supported 30-day relative windows, the highest pooled rate is 4.35% in window 7 (193/4,434); the lowest is 2.51% in window 1 (2,698/107,361).",
+      "business_implication": "The observed variation motivates time-based monitoring. The dataset uses elapsed time, so it cannot support calendar-season explanations by itself.",
+      "evidence": "30-day bins begin at the minimum TransactionDT; periods below 1,000 rows are excluded from this comparison."
+    },
+    {
+      "finding": "The highest supported ProductCD × card6 cell is ProductCD C with card6 credit: 16.68% fraud across 22,002 rows.",
+      "business_implication": "Category combinations may be useful segments for further review, with counts and uncertainty checked before operational use.",
+      "evidence": "Two-way group aggregation; only cells with at least 200 rows are ranked."
+    },
+    {
+      "finding": "The highest supported ProductCD × amount-quantile cell is ProductCD H / Q10, at 39.05% across 630 rows.",
+      "business_implication": "Risk differences can vary within a product category by amount band; aggregate category rates can hide these pockets.",
+      "evidence": "Rates are computed from raw TransactionAmt quantiles and isFraud in the training-fit partition; support threshold=200."
+    },
+    {
+      "finding": "The highest supported 30-day-time × amount-quantile cell is window 7 / Q6, at 8.59% across 454 rows.",
+      "business_implication": "Amount-band monitoring may need to account for changes over the transaction sequence rather than relying on one global rate.",
+      "evidence": "Time windows are 30 elapsed days from the first TransactionDT; cells below 200 rows are not ranked."
+    },
+    {
+      "finding": "Among the seven selected numeric fields, V258 has the largest absolute point-biserial association with isFraud (r=0.300, pairwise n=104,446).",
+      "business_implication": "This is a screening signal for later feature review, not a claim of causation or evidence that a trained model would rank it as important.",
+      "evidence": "Pairwise Pearson correlation with the binary target, calculated on all nonmissing training-fit values for each selected field."
+    }
+  ],
+  "validation_checks": {
+    "fit_rows_match_manifest": true,
+    "fit_target_counts_match_manifest": true,
+    "amount_decile_rows_sum_to_fit": true,
+    "daily_rows_sum_to_fit": true,
+    "category_pair_rows_sum_to_fit": true,
+    "product_amount_rows_sum_to_fit": true,
+    "time_amount_rows_sum_to_fit": true,
+    "no_test_source_read": true,
+    "no_model_training": true,
+    "week1_sources_read_only": true
+  }
+}
