@@ -1,0 +1,34 @@
+# Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.log
+*.tmp
+.env
+.env.*
+!.env.example
+
+# Source data and derived row-level tables (never commit IEEE-CIS data)
+data/
+train_transaction.csv
+train_identity.csv
+test_transaction.csv
+test_identity.csv
+sample_submission.csv
+*_transaction.csv
+*_identity.csv
+*_encoded.csv
+*_cleaned.csv
+validation_predictions.csv
+cleaned_data/preprocessed/
+cleaned_data_v2/preprocessed/
+cleaned_data_v2/split_manifest.json
+
+# Local model artifacts and editor/OS files
+*.joblib
+*.pkl
+.vscode/
+.DS_Store
+Thumbs.db

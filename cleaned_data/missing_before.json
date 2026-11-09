@@ -1,0 +1,3496 @@
+{
+  "train_transaction.csv": {
+    "TransactionID": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "isFraud": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "TransactionDT": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "TransactionAmt": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "ProductCD": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "card1": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "card2": {
+      "missing_count": 8933,
+      "missing_pct": 1.512683
+    },
+    "card3": {
+      "missing_count": 1565,
+      "missing_pct": 0.265012
+    },
+    "card4": {
+      "missing_count": 1577,
+      "missing_pct": 0.267044
+    },
+    "card5": {
+      "missing_count": 4259,
+      "missing_pct": 0.721204
+    },
+    "card6": {
+      "missing_count": 1571,
+      "missing_pct": 0.266028
+    },
+    "addr1": {
+      "missing_count": 65706,
+      "missing_pct": 11.126427
+    },
+    "addr2": {
+      "missing_count": 65706,
+      "missing_pct": 11.126427
+    },
+    "dist1": {
+      "missing_count": 352271,
+      "missing_pct": 59.652352
+    },
+    "dist2": {
+      "missing_count": 552913,
+      "missing_pct": 93.628374
+    },
+    "P_emaildomain": {
+      "missing_count": 94456,
+      "missing_pct": 15.994852
+    },
+    "R_emaildomain": {
+      "missing_count": 453249,
+      "missing_pct": 76.751617
+    },
+    "C1": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "C2": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "C3": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "C4": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "C5": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "C6": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "C7": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "C8": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "C9": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "C10": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "C11": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "C12": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "C13": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "C14": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "D1": {
+      "missing_count": 1269,
+      "missing_pct": 0.214888
+    },
+    "D2": {
+      "missing_count": 280797,
+      "missing_pct": 47.549192
+    },
+    "D3": {
+      "missing_count": 262878,
+      "missing_pct": 44.514851
+    },
+    "D4": {
+      "missing_count": 168922,
+      "missing_pct": 28.604667
+    },
+    "D5": {
+      "missing_count": 309841,
+      "missing_pct": 52.467403
+    },
+    "D6": {
+      "missing_count": 517353,
+      "missing_pct": 87.606767
+    },
+    "D7": {
+      "missing_count": 551623,
+      "missing_pct": 93.40993
+    },
+    "D8": {
+      "missing_count": 515614,
+      "missing_pct": 87.31229
+    },
+    "D9": {
+      "missing_count": 515614,
+      "missing_pct": 87.31229
+    },
+    "D10": {
+      "missing_count": 76022,
+      "missing_pct": 12.873302
+    },
+    "D11": {
+      "missing_count": 279287,
+      "missing_pct": 47.293494
+    },
+    "D12": {
+      "missing_count": 525823,
+      "missing_pct": 89.041047
+    },
+    "D13": {
+      "missing_count": 528588,
+      "missing_pct": 89.509263
+    },
+    "D14": {
+      "missing_count": 528353,
+      "missing_pct": 89.469469
+    },
+    "D15": {
+      "missing_count": 89113,
+      "missing_pct": 15.090087
+    },
+    "M1": {
+      "missing_count": 271100,
+      "missing_pct": 45.907136
+    },
+    "M2": {
+      "missing_count": 271100,
+      "missing_pct": 45.907136
+    },
+    "M3": {
+      "missing_count": 271100,
+      "missing_pct": 45.907136
+    },
+    "M4": {
+      "missing_count": 281444,
+      "missing_pct": 47.658753
+    },
+    "M5": {
+      "missing_count": 350482,
+      "missing_pct": 59.349409
+    },
+    "M6": {
+      "missing_count": 169360,
+      "missing_pct": 28.678836
+    },
+    "M7": {
+      "missing_count": 346265,
+      "missing_pct": 58.635317
+    },
+    "M8": {
+      "missing_count": 346252,
+      "missing_pct": 58.633115
+    },
+    "M9": {
+      "missing_count": 346252,
+      "missing_pct": 58.633115
+    },
+    "V1": {
+      "missing_count": 279287,
+      "missing_pct": 47.293494
+    },
+    "V2": {
+      "missing_count": 279287,
+      "missing_pct": 47.293494
+    },
+    "V3": {
+      "missing_count": 279287,
+      "missing_pct": 47.293494
+    },
+    "V4": {
+      "missing_count": 279287,
+      "missing_pct": 47.293494
+    },
+    "V5": {
+      "missing_count": 279287,
+      "missing_pct": 47.293494
+    },
+    "V6": {
+      "missing_count": 279287,
+      "missing_pct": 47.293494
+    },
+    "V7": {
+      "missing_count": 279287,
+      "missing_pct": 47.293494
+    },
+    "V8": {
+      "missing_count": 279287,
+      "missing_pct": 47.293494
+    },
+    "V9": {
+      "missing_count": 279287,
+      "missing_pct": 47.293494
+    },
+    "V10": {
+      "missing_count": 279287,
+      "missing_pct": 47.293494
+    },
+    "V11": {
+      "missing_count": 279287,
+      "missing_pct": 47.293494
+    },
+    "V12": {
+      "missing_count": 76073,
+      "missing_pct": 12.881939
+    },
+    "V13": {
+      "missing_count": 76073,
+      "missing_pct": 12.881939
+    },
+    "V14": {
+      "missing_count": 76073,
+      "missing_pct": 12.881939
+    },
+    "V15": {
+      "missing_count": 76073,
+      "missing_pct": 12.881939
+    },
+    "V16": {
+      "missing_count": 76073,
+      "missing_pct": 12.881939
+    },
+    "V17": {
+      "missing_count": 76073,
+      "missing_pct": 12.881939
+    },
+    "V18": {
+      "missing_count": 76073,
+      "missing_pct": 12.881939
+    },
+    "V19": {
+      "missing_count": 76073,
+      "missing_pct": 12.881939
+    },
+    "V20": {
+      "missing_count": 76073,
+      "missing_pct": 12.881939
+    },
+    "V21": {
+      "missing_count": 76073,
+      "missing_pct": 12.881939
+    },
+    "V22": {
+      "missing_count": 76073,
+      "missing_pct": 12.881939
+    },
+    "V23": {
+      "missing_count": 76073,
+      "missing_pct": 12.881939
+    },
+    "V24": {
+      "missing_count": 76073,
+      "missing_pct": 12.881939
+    },
+    "V25": {
+      "missing_count": 76073,
+      "missing_pct": 12.881939
+    },
+    "V26": {
+      "missing_count": 76073,
+      "missing_pct": 12.881939
+    },
+    "V27": {
+      "missing_count": 76073,
+      "missing_pct": 12.881939
+    },
+    "V28": {
+      "missing_count": 76073,
+      "missing_pct": 12.881939
+    },
+    "V29": {
+      "missing_count": 76073,
+      "missing_pct": 12.881939
+    },
+    "V30": {
+      "missing_count": 76073,
+      "missing_pct": 12.881939
+    },
+    "V31": {
+      "missing_count": 76073,
+      "missing_pct": 12.881939
+    },
+    "V32": {
+      "missing_count": 76073,
+      "missing_pct": 12.881939
+    },
+    "V33": {
+      "missing_count": 76073,
+      "missing_pct": 12.881939
+    },
+    "V34": {
+      "missing_count": 76073,
+      "missing_pct": 12.881939
+    },
+    "V35": {
+      "missing_count": 168969,
+      "missing_pct": 28.612626
+    },
+    "V36": {
+      "missing_count": 168969,
+      "missing_pct": 28.612626
+    },
+    "V37": {
+      "missing_count": 168969,
+      "missing_pct": 28.612626
+    },
+    "V38": {
+      "missing_count": 168969,
+      "missing_pct": 28.612626
+    },
+    "V39": {
+      "missing_count": 168969,
+      "missing_pct": 28.612626
+    },
+    "V40": {
+      "missing_count": 168969,
+      "missing_pct": 28.612626
+    },
+    "V41": {
+      "missing_count": 168969,
+      "missing_pct": 28.612626
+    },
+    "V42": {
+      "missing_count": 168969,
+      "missing_pct": 28.612626
+    },
+    "V43": {
+      "missing_count": 168969,
+      "missing_pct": 28.612626
+    },
+    "V44": {
+      "missing_count": 168969,
+      "missing_pct": 28.612626
+    },
+    "V45": {
+      "missing_count": 168969,
+      "missing_pct": 28.612626
+    },
+    "V46": {
+      "missing_count": 168969,
+      "missing_pct": 28.612626
+    },
+    "V47": {
+      "missing_count": 168969,
+      "missing_pct": 28.612626
+    },
+    "V48": {
+      "missing_count": 168969,
+      "missing_pct": 28.612626
+    },
+    "V49": {
+      "missing_count": 168969,
+      "missing_pct": 28.612626
+    },
+    "V50": {
+      "missing_count": 168969,
+      "missing_pct": 28.612626
+    },
+    "V51": {
+      "missing_count": 168969,
+      "missing_pct": 28.612626
+    },
+    "V52": {
+      "missing_count": 168969,
+      "missing_pct": 28.612626
+    },
+    "V53": {
+      "missing_count": 77096,
+      "missing_pct": 13.05517
+    },
+    "V54": {
+      "missing_count": 77096,
+      "missing_pct": 13.05517
+    },
+    "V55": {
+      "missing_count": 77096,
+      "missing_pct": 13.05517
+    },
+    "V56": {
+      "missing_count": 77096,
+      "missing_pct": 13.05517
+    },
+    "V57": {
+      "missing_count": 77096,
+      "missing_pct": 13.05517
+    },
+    "V58": {
+      "missing_count": 77096,
+      "missing_pct": 13.05517
+    },
+    "V59": {
+      "missing_count": 77096,
+      "missing_pct": 13.05517
+    },
+    "V60": {
+      "missing_count": 77096,
+      "missing_pct": 13.05517
+    },
+    "V61": {
+      "missing_count": 77096,
+      "missing_pct": 13.05517
+    },
+    "V62": {
+      "missing_count": 77096,
+      "missing_pct": 13.05517
+    },
+    "V63": {
+      "missing_count": 77096,
+      "missing_pct": 13.05517
+    },
+    "V64": {
+      "missing_count": 77096,
+      "missing_pct": 13.05517
+    },
+    "V65": {
+      "missing_count": 77096,
+      "missing_pct": 13.05517
+    },
+    "V66": {
+      "missing_count": 77096,
+      "missing_pct": 13.05517
+    },
+    "V67": {
+      "missing_count": 77096,
+      "missing_pct": 13.05517
+    },
+    "V68": {
+      "missing_count": 77096,
+      "missing_pct": 13.05517
+    },
+    "V69": {
+      "missing_count": 77096,
+      "missing_pct": 13.05517
+    },
+    "V70": {
+      "missing_count": 77096,
+      "missing_pct": 13.05517
+    },
+    "V71": {
+      "missing_count": 77096,
+      "missing_pct": 13.05517
+    },
+    "V72": {
+      "missing_count": 77096,
+      "missing_pct": 13.05517
+    },
+    "V73": {
+      "missing_count": 77096,
+      "missing_pct": 13.05517
+    },
+    "V74": {
+      "missing_count": 77096,
+      "missing_pct": 13.05517
+    },
+    "V75": {
+      "missing_count": 89164,
+      "missing_pct": 15.098723
+    },
+    "V76": {
+      "missing_count": 89164,
+      "missing_pct": 15.098723
+    },
+    "V77": {
+      "missing_count": 89164,
+      "missing_pct": 15.098723
+    },
+    "V78": {
+      "missing_count": 89164,
+      "missing_pct": 15.098723
+    },
+    "V79": {
+      "missing_count": 89164,
+      "missing_pct": 15.098723
+    },
+    "V80": {
+      "missing_count": 89164,
+      "missing_pct": 15.098723
+    },
+    "V81": {
+      "missing_count": 89164,
+      "missing_pct": 15.098723
+    },
+    "V82": {
+      "missing_count": 89164,
+      "missing_pct": 15.098723
+    },
+    "V83": {
+      "missing_count": 89164,
+      "missing_pct": 15.098723
+    },
+    "V84": {
+      "missing_count": 89164,
+      "missing_pct": 15.098723
+    },
+    "V85": {
+      "missing_count": 89164,
+      "missing_pct": 15.098723
+    },
+    "V86": {
+      "missing_count": 89164,
+      "missing_pct": 15.098723
+    },
+    "V87": {
+      "missing_count": 89164,
+      "missing_pct": 15.098723
+    },
+    "V88": {
+      "missing_count": 89164,
+      "missing_pct": 15.098723
+    },
+    "V89": {
+      "missing_count": 89164,
+      "missing_pct": 15.098723
+    },
+    "V90": {
+      "missing_count": 89164,
+      "missing_pct": 15.098723
+    },
+    "V91": {
+      "missing_count": 89164,
+      "missing_pct": 15.098723
+    },
+    "V92": {
+      "missing_count": 89164,
+      "missing_pct": 15.098723
+    },
+    "V93": {
+      "missing_count": 89164,
+      "missing_pct": 15.098723
+    },
+    "V94": {
+      "missing_count": 89164,
+      "missing_pct": 15.098723
+    },
+    "V95": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V96": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V97": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V98": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V99": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V100": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V101": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V102": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V103": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V104": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V105": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V106": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V107": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V108": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V109": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V110": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V111": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V112": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V113": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V114": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V115": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V116": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V117": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V118": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V119": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V120": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V121": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V122": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V123": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V124": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V125": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V126": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V127": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V128": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V129": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V130": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V131": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V132": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V133": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V134": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V135": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V136": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V137": {
+      "missing_count": 314,
+      "missing_pct": 0.053172
+    },
+    "V138": {
+      "missing_count": 508595,
+      "missing_pct": 86.123717
+    },
+    "V139": {
+      "missing_count": 508595,
+      "missing_pct": 86.123717
+    },
+    "V140": {
+      "missing_count": 508595,
+      "missing_pct": 86.123717
+    },
+    "V141": {
+      "missing_count": 508595,
+      "missing_pct": 86.123717
+    },
+    "V142": {
+      "missing_count": 508595,
+      "missing_pct": 86.123717
+    },
+    "V143": {
+      "missing_count": 508589,
+      "missing_pct": 86.122701
+    },
+    "V144": {
+      "missing_count": 508589,
+      "missing_pct": 86.122701
+    },
+    "V145": {
+      "missing_count": 508589,
+      "missing_pct": 86.122701
+    },
+    "V146": {
+      "missing_count": 508595,
+      "missing_pct": 86.123717
+    },
+    "V147": {
+      "missing_count": 508595,
+      "missing_pct": 86.123717
+    },
+    "V148": {
+      "missing_count": 508595,
+      "missing_pct": 86.123717
+    },
+    "V149": {
+      "missing_count": 508595,
+      "missing_pct": 86.123717
+    },
+    "V150": {
+      "missing_count": 508589,
+      "missing_pct": 86.122701
+    },
+    "V151": {
+      "missing_count": 508589,
+      "missing_pct": 86.122701
+    },
+    "V152": {
+      "missing_count": 508589,
+      "missing_pct": 86.122701
+    },
+    "V153": {
+      "missing_count": 508595,
+      "missing_pct": 86.123717
+    },
+    "V154": {
+      "missing_count": 508595,
+      "missing_pct": 86.123717
+    },
+    "V155": {
+      "missing_count": 508595,
+      "missing_pct": 86.123717
+    },
+    "V156": {
+      "missing_count": 508595,
+      "missing_pct": 86.123717
+    },
+    "V157": {
+      "missing_count": 508595,
+      "missing_pct": 86.123717
+    },
+    "V158": {
+      "missing_count": 508595,
+      "missing_pct": 86.123717
+    },
+    "V159": {
+      "missing_count": 508589,
+      "missing_pct": 86.122701
+    },
+    "V160": {
+      "missing_count": 508589,
+      "missing_pct": 86.122701
+    },
+    "V161": {
+      "missing_count": 508595,
+      "missing_pct": 86.123717
+    },
+    "V162": {
+      "missing_count": 508595,
+      "missing_pct": 86.123717
+    },
+    "V163": {
+      "missing_count": 508595,
+      "missing_pct": 86.123717
+    },
+    "V164": {
+      "missing_count": 508589,
+      "missing_pct": 86.122701
+    },
+    "V165": {
+      "missing_count": 508589,
+      "missing_pct": 86.122701
+    },
+    "V166": {
+      "missing_count": 508589,
+      "missing_pct": 86.122701
+    },
+    "V167": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V168": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V169": {
+      "missing_count": 450721,
+      "missing_pct": 76.323534
+    },
+    "V170": {
+      "missing_count": 450721,
+      "missing_pct": 76.323534
+    },
+    "V171": {
+      "missing_count": 450721,
+      "missing_pct": 76.323534
+    },
+    "V172": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V173": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V174": {
+      "missing_count": 450721,
+      "missing_pct": 76.323534
+    },
+    "V175": {
+      "missing_count": 450721,
+      "missing_pct": 76.323534
+    },
+    "V176": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V177": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V178": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V179": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V180": {
+      "missing_count": 450721,
+      "missing_pct": 76.323534
+    },
+    "V181": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V182": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V183": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V184": {
+      "missing_count": 450721,
+      "missing_pct": 76.323534
+    },
+    "V185": {
+      "missing_count": 450721,
+      "missing_pct": 76.323534
+    },
+    "V186": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V187": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V188": {
+      "missing_count": 450721,
+      "missing_pct": 76.323534
+    },
+    "V189": {
+      "missing_count": 450721,
+      "missing_pct": 76.323534
+    },
+    "V190": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V191": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V192": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V193": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V194": {
+      "missing_count": 450721,
+      "missing_pct": 76.323534
+    },
+    "V195": {
+      "missing_count": 450721,
+      "missing_pct": 76.323534
+    },
+    "V196": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V197": {
+      "missing_count": 450721,
+      "missing_pct": 76.323534
+    },
+    "V198": {
+      "missing_count": 450721,
+      "missing_pct": 76.323534
+    },
+    "V199": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V200": {
+      "missing_count": 450721,
+      "missing_pct": 76.323534
+    },
+    "V201": {
+      "missing_count": 450721,
+      "missing_pct": 76.323534
+    },
+    "V202": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V203": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V204": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V205": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V206": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V207": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V208": {
+      "missing_count": 450721,
+      "missing_pct": 76.323534
+    },
+    "V209": {
+      "missing_count": 450721,
+      "missing_pct": 76.323534
+    },
+    "V210": {
+      "missing_count": 450721,
+      "missing_pct": 76.323534
+    },
+    "V211": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V212": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V213": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V214": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V215": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V216": {
+      "missing_count": 450909,
+      "missing_pct": 76.35537
+    },
+    "V217": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V218": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V219": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V220": {
+      "missing_count": 449124,
+      "missing_pct": 76.053104
+    },
+    "V221": {
+      "missing_count": 449124,
+      "missing_pct": 76.053104
+    },
+    "V222": {
+      "missing_count": 449124,
+      "missing_pct": 76.053104
+    },
+    "V223": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V224": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V225": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V226": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V227": {
+      "missing_count": 449124,
+      "missing_pct": 76.053104
+    },
+    "V228": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V229": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V230": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V231": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V232": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V233": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V234": {
+      "missing_count": 449124,
+      "missing_pct": 76.053104
+    },
+    "V235": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V236": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V237": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V238": {
+      "missing_count": 449124,
+      "missing_pct": 76.053104
+    },
+    "V239": {
+      "missing_count": 449124,
+      "missing_pct": 76.053104
+    },
+    "V240": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V241": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V242": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V243": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V244": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V245": {
+      "missing_count": 449124,
+      "missing_pct": 76.053104
+    },
+    "V246": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V247": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V248": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V249": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V250": {
+      "missing_count": 449124,
+      "missing_pct": 76.053104
+    },
+    "V251": {
+      "missing_count": 449124,
+      "missing_pct": 76.053104
+    },
+    "V252": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V253": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V254": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V255": {
+      "missing_count": 449124,
+      "missing_pct": 76.053104
+    },
+    "V256": {
+      "missing_count": 449124,
+      "missing_pct": 76.053104
+    },
+    "V257": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V258": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V259": {
+      "missing_count": 449124,
+      "missing_pct": 76.053104
+    },
+    "V260": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V261": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V262": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V263": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V264": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V265": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V266": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V267": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V268": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V269": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V270": {
+      "missing_count": 449124,
+      "missing_pct": 76.053104
+    },
+    "V271": {
+      "missing_count": 449124,
+      "missing_pct": 76.053104
+    },
+    "V272": {
+      "missing_count": 449124,
+      "missing_pct": 76.053104
+    },
+    "V273": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V274": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V275": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V276": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V277": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V278": {
+      "missing_count": 460110,
+      "missing_pct": 77.913435
+    },
+    "V279": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V280": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V281": {
+      "missing_count": 1269,
+      "missing_pct": 0.214888
+    },
+    "V282": {
+      "missing_count": 1269,
+      "missing_pct": 0.214888
+    },
+    "V283": {
+      "missing_count": 1269,
+      "missing_pct": 0.214888
+    },
+    "V284": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V285": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V286": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V287": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V288": {
+      "missing_count": 1269,
+      "missing_pct": 0.214888
+    },
+    "V289": {
+      "missing_count": 1269,
+      "missing_pct": 0.214888
+    },
+    "V290": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V291": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V292": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V293": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V294": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V295": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V296": {
+      "missing_count": 1269,
+      "missing_pct": 0.214888
+    },
+    "V297": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V298": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V299": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V300": {
+      "missing_count": 1269,
+      "missing_pct": 0.214888
+    },
+    "V301": {
+      "missing_count": 1269,
+      "missing_pct": 0.214888
+    },
+    "V302": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V303": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V304": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V305": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V306": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V307": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V308": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V309": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V310": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V311": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V312": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V313": {
+      "missing_count": 1269,
+      "missing_pct": 0.214888
+    },
+    "V314": {
+      "missing_count": 1269,
+      "missing_pct": 0.214888
+    },
+    "V315": {
+      "missing_count": 1269,
+      "missing_pct": 0.214888
+    },
+    "V316": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V317": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V318": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V319": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V320": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V321": {
+      "missing_count": 12,
+      "missing_pct": 0.002032
+    },
+    "V322": {
+      "missing_count": 508189,
+      "missing_pct": 86.054967
+    },
+    "V323": {
+      "missing_count": 508189,
+      "missing_pct": 86.054967
+    },
+    "V324": {
+      "missing_count": 508189,
+      "missing_pct": 86.054967
+    },
+    "V325": {
+      "missing_count": 508189,
+      "missing_pct": 86.054967
+    },
+    "V326": {
+      "missing_count": 508189,
+      "missing_pct": 86.054967
+    },
+    "V327": {
+      "missing_count": 508189,
+      "missing_pct": 86.054967
+    },
+    "V328": {
+      "missing_count": 508189,
+      "missing_pct": 86.054967
+    },
+    "V329": {
+      "missing_count": 508189,
+      "missing_pct": 86.054967
+    },
+    "V330": {
+      "missing_count": 508189,
+      "missing_pct": 86.054967
+    },
+    "V331": {
+      "missing_count": 508189,
+      "missing_pct": 86.054967
+    },
+    "V332": {
+      "missing_count": 508189,
+      "missing_pct": 86.054967
+    },
+    "V333": {
+      "missing_count": 508189,
+      "missing_pct": 86.054967
+    },
+    "V334": {
+      "missing_count": 508189,
+      "missing_pct": 86.054967
+    },
+    "V335": {
+      "missing_count": 508189,
+      "missing_pct": 86.054967
+    },
+    "V336": {
+      "missing_count": 508189,
+      "missing_pct": 86.054967
+    },
+    "V337": {
+      "missing_count": 508189,
+      "missing_pct": 86.054967
+    },
+    "V338": {
+      "missing_count": 508189,
+      "missing_pct": 86.054967
+    },
+    "V339": {
+      "missing_count": 508189,
+      "missing_pct": 86.054967
+    }
+  },
+  "train_identity.csv": {
+    "TransactionID": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "id_01": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "id_02": {
+      "missing_count": 3361,
+      "missing_pct": 2.330257
+    },
+    "id_03": {
+      "missing_count": 77909,
+      "missing_pct": 54.016071
+    },
+    "id_04": {
+      "missing_count": 77909,
+      "missing_pct": 54.016071
+    },
+    "id_05": {
+      "missing_count": 7368,
+      "missing_pct": 5.108401
+    },
+    "id_06": {
+      "missing_count": 7368,
+      "missing_pct": 5.108401
+    },
+    "id_07": {
+      "missing_count": 139078,
+      "missing_pct": 96.425922
+    },
+    "id_08": {
+      "missing_count": 139078,
+      "missing_pct": 96.425922
+    },
+    "id_09": {
+      "missing_count": 69307,
+      "missing_pct": 48.05211
+    },
+    "id_10": {
+      "missing_count": 69307,
+      "missing_pct": 48.05211
+    },
+    "id_11": {
+      "missing_count": 3255,
+      "missing_pct": 2.256765
+    },
+    "id_12": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "id_13": {
+      "missing_count": 16913,
+      "missing_pct": 11.726165
+    },
+    "id_14": {
+      "missing_count": 64189,
+      "missing_pct": 44.503685
+    },
+    "id_15": {
+      "missing_count": 3248,
+      "missing_pct": 2.251912
+    },
+    "id_16": {
+      "missing_count": 14893,
+      "missing_pct": 10.325654
+    },
+    "id_17": {
+      "missing_count": 4864,
+      "missing_pct": 3.372321
+    },
+    "id_18": {
+      "missing_count": 99120,
+      "missing_pct": 68.722137
+    },
+    "id_19": {
+      "missing_count": 4915,
+      "missing_pct": 3.407681
+    },
+    "id_20": {
+      "missing_count": 4972,
+      "missing_pct": 3.4472
+    },
+    "id_21": {
+      "missing_count": 139074,
+      "missing_pct": 96.423149
+    },
+    "id_22": {
+      "missing_count": 139064,
+      "missing_pct": 96.416215
+    },
+    "id_23": {
+      "missing_count": 139064,
+      "missing_pct": 96.416215
+    },
+    "id_24": {
+      "missing_count": 139486,
+      "missing_pct": 96.708798
+    },
+    "id_25": {
+      "missing_count": 139101,
+      "missing_pct": 96.441868
+    },
+    "id_26": {
+      "missing_count": 139070,
+      "missing_pct": 96.420375
+    },
+    "id_27": {
+      "missing_count": 139064,
+      "missing_pct": 96.416215
+    },
+    "id_28": {
+      "missing_count": 3255,
+      "missing_pct": 2.256765
+    },
+    "id_29": {
+      "missing_count": 3255,
+      "missing_pct": 2.256765
+    },
+    "id_30": {
+      "missing_count": 66668,
+      "missing_pct": 46.222432
+    },
+    "id_31": {
+      "missing_count": 3951,
+      "missing_pct": 2.739318
+    },
+    "id_32": {
+      "missing_count": 66647,
+      "missing_pct": 46.207872
+    },
+    "id_33": {
+      "missing_count": 70944,
+      "missing_pct": 49.187079
+    },
+    "id_34": {
+      "missing_count": 66428,
+      "missing_pct": 46.056034
+    },
+    "id_35": {
+      "missing_count": 3248,
+      "missing_pct": 2.251912
+    },
+    "id_36": {
+      "missing_count": 3248,
+      "missing_pct": 2.251912
+    },
+    "id_37": {
+      "missing_count": 3248,
+      "missing_pct": 2.251912
+    },
+    "id_38": {
+      "missing_count": 3248,
+      "missing_pct": 2.251912
+    },
+    "DeviceType": {
+      "missing_count": 3423,
+      "missing_pct": 2.373243
+    },
+    "DeviceInfo": {
+      "missing_count": 25567,
+      "missing_pct": 17.726179
+    }
+  },
+  "test_transaction.csv": {
+    "TransactionID": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "TransactionDT": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "TransactionAmt": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "ProductCD": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "card1": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "card2": {
+      "missing_count": 8654,
+      "missing_pct": 1.707944
+    },
+    "card3": {
+      "missing_count": 3002,
+      "missing_pct": 0.592472
+    },
+    "card4": {
+      "missing_count": 3086,
+      "missing_pct": 0.60905
+    },
+    "card5": {
+      "missing_count": 4547,
+      "missing_pct": 0.897391
+    },
+    "card6": {
+      "missing_count": 3007,
+      "missing_pct": 0.593458
+    },
+    "addr1": {
+      "missing_count": 65609,
+      "missing_pct": 12.948523
+    },
+    "addr2": {
+      "missing_count": 65609,
+      "missing_pct": 12.948523
+    },
+    "dist1": {
+      "missing_count": 291217,
+      "missing_pct": 57.474279
+    },
+    "dist2": {
+      "missing_count": 470255,
+      "missing_pct": 92.80903
+    },
+    "P_emaildomain": {
+      "missing_count": 69192,
+      "missing_pct": 13.65566
+    },
+    "R_emaildomain": {
+      "missing_count": 370821,
+      "missing_pct": 73.18484
+    },
+    "C1": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "C2": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "C3": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "C4": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "C5": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "C6": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "C7": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "C8": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "C9": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "C10": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "C11": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "C12": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "C13": {
+      "missing_count": 4748,
+      "missing_pct": 0.93706
+    },
+    "C14": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "D1": {
+      "missing_count": 6031,
+      "missing_pct": 1.190272
+    },
+    "D2": {
+      "missing_count": 234769,
+      "missing_pct": 46.333762
+    },
+    "D3": {
+      "missing_count": 203142,
+      "missing_pct": 40.09189
+    },
+    "D4": {
+      "missing_count": 76851,
+      "missing_pct": 15.167232
+    },
+    "D5": {
+      "missing_count": 224375,
+      "missing_pct": 44.282413
+    },
+    "D6": {
+      "missing_count": 381908,
+      "missing_pct": 75.372959
+    },
+    "D7": {
+      "missing_count": 446558,
+      "missing_pct": 88.132215
+    },
+    "D8": {
+      "missing_count": 432353,
+      "missing_pct": 85.328731
+    },
+    "D9": {
+      "missing_count": 432353,
+      "missing_pct": 85.328731
+    },
+    "D10": {
+      "missing_count": 12545,
+      "missing_pct": 2.475868
+    },
+    "D11": {
+      "missing_count": 176518,
+      "missing_pct": 34.837406
+    },
+    "D12": {
+      "missing_count": 437437,
+      "missing_pct": 86.332104
+    },
+    "D13": {
+      "missing_count": 383307,
+      "missing_pct": 75.649064
+    },
+    "D14": {
+      "missing_count": 391497,
+      "missing_pct": 77.265434
+    },
+    "D15": {
+      "missing_count": 12069,
+      "missing_pct": 2.381925
+    },
+    "M1": {
+      "missing_count": 176639,
+      "missing_pct": 34.861286
+    },
+    "M2": {
+      "missing_count": 176639,
+      "missing_pct": 34.861286
+    },
+    "M3": {
+      "missing_count": 176639,
+      "missing_pct": 34.861286
+    },
+    "M4": {
+      "missing_count": 237745,
+      "missing_pct": 46.921102
+    },
+    "M5": {
+      "missing_count": 309632,
+      "missing_pct": 61.108644
+    },
+    "M6": {
+      "missing_count": 158939,
+      "missing_pct": 31.368033
+    },
+    "M7": {
+      "missing_count": 235018,
+      "missing_pct": 46.382904
+    },
+    "M8": {
+      "missing_count": 235004,
+      "missing_pct": 46.380141
+    },
+    "M9": {
+      "missing_count": 235004,
+      "missing_pct": 46.380141
+    },
+    "V1": {
+      "missing_count": 176518,
+      "missing_pct": 34.837406
+    },
+    "V2": {
+      "missing_count": 176518,
+      "missing_pct": 34.837406
+    },
+    "V3": {
+      "missing_count": 176518,
+      "missing_pct": 34.837406
+    },
+    "V4": {
+      "missing_count": 176518,
+      "missing_pct": 34.837406
+    },
+    "V5": {
+      "missing_count": 176518,
+      "missing_pct": 34.837406
+    },
+    "V6": {
+      "missing_count": 176518,
+      "missing_pct": 34.837406
+    },
+    "V7": {
+      "missing_count": 176518,
+      "missing_pct": 34.837406
+    },
+    "V8": {
+      "missing_count": 176518,
+      "missing_pct": 34.837406
+    },
+    "V9": {
+      "missing_count": 176518,
+      "missing_pct": 34.837406
+    },
+    "V10": {
+      "missing_count": 176518,
+      "missing_pct": 34.837406
+    },
+    "V11": {
+      "missing_count": 176518,
+      "missing_pct": 34.837406
+    },
+    "V12": {
+      "missing_count": 12589,
+      "missing_pct": 2.484552
+    },
+    "V13": {
+      "missing_count": 12589,
+      "missing_pct": 2.484552
+    },
+    "V14": {
+      "missing_count": 12589,
+      "missing_pct": 2.484552
+    },
+    "V15": {
+      "missing_count": 12589,
+      "missing_pct": 2.484552
+    },
+    "V16": {
+      "missing_count": 12589,
+      "missing_pct": 2.484552
+    },
+    "V17": {
+      "missing_count": 12589,
+      "missing_pct": 2.484552
+    },
+    "V18": {
+      "missing_count": 12589,
+      "missing_pct": 2.484552
+    },
+    "V19": {
+      "missing_count": 12589,
+      "missing_pct": 2.484552
+    },
+    "V20": {
+      "missing_count": 12589,
+      "missing_pct": 2.484552
+    },
+    "V21": {
+      "missing_count": 12589,
+      "missing_pct": 2.484552
+    },
+    "V22": {
+      "missing_count": 12589,
+      "missing_pct": 2.484552
+    },
+    "V23": {
+      "missing_count": 12589,
+      "missing_pct": 2.484552
+    },
+    "V24": {
+      "missing_count": 12589,
+      "missing_pct": 2.484552
+    },
+    "V25": {
+      "missing_count": 12589,
+      "missing_pct": 2.484552
+    },
+    "V26": {
+      "missing_count": 12589,
+      "missing_pct": 2.484552
+    },
+    "V27": {
+      "missing_count": 12589,
+      "missing_pct": 2.484552
+    },
+    "V28": {
+      "missing_count": 12589,
+      "missing_pct": 2.484552
+    },
+    "V29": {
+      "missing_count": 12589,
+      "missing_pct": 2.484552
+    },
+    "V30": {
+      "missing_count": 12589,
+      "missing_pct": 2.484552
+    },
+    "V31": {
+      "missing_count": 12589,
+      "missing_pct": 2.484552
+    },
+    "V32": {
+      "missing_count": 12589,
+      "missing_pct": 2.484552
+    },
+    "V33": {
+      "missing_count": 12589,
+      "missing_pct": 2.484552
+    },
+    "V34": {
+      "missing_count": 12589,
+      "missing_pct": 2.484552
+    },
+    "V35": {
+      "missing_count": 76854,
+      "missing_pct": 15.167824
+    },
+    "V36": {
+      "missing_count": 76854,
+      "missing_pct": 15.167824
+    },
+    "V37": {
+      "missing_count": 76854,
+      "missing_pct": 15.167824
+    },
+    "V38": {
+      "missing_count": 76854,
+      "missing_pct": 15.167824
+    },
+    "V39": {
+      "missing_count": 76854,
+      "missing_pct": 15.167824
+    },
+    "V40": {
+      "missing_count": 76854,
+      "missing_pct": 15.167824
+    },
+    "V41": {
+      "missing_count": 76854,
+      "missing_pct": 15.167824
+    },
+    "V42": {
+      "missing_count": 76854,
+      "missing_pct": 15.167824
+    },
+    "V43": {
+      "missing_count": 76854,
+      "missing_pct": 15.167824
+    },
+    "V44": {
+      "missing_count": 76854,
+      "missing_pct": 15.167824
+    },
+    "V45": {
+      "missing_count": 76854,
+      "missing_pct": 15.167824
+    },
+    "V46": {
+      "missing_count": 76854,
+      "missing_pct": 15.167824
+    },
+    "V47": {
+      "missing_count": 76854,
+      "missing_pct": 15.167824
+    },
+    "V48": {
+      "missing_count": 76854,
+      "missing_pct": 15.167824
+    },
+    "V49": {
+      "missing_count": 76854,
+      "missing_pct": 15.167824
+    },
+    "V50": {
+      "missing_count": 76854,
+      "missing_pct": 15.167824
+    },
+    "V51": {
+      "missing_count": 76854,
+      "missing_pct": 15.167824
+    },
+    "V52": {
+      "missing_count": 76854,
+      "missing_pct": 15.167824
+    },
+    "V53": {
+      "missing_count": 12899,
+      "missing_pct": 2.545733
+    },
+    "V54": {
+      "missing_count": 12899,
+      "missing_pct": 2.545733
+    },
+    "V55": {
+      "missing_count": 12899,
+      "missing_pct": 2.545733
+    },
+    "V56": {
+      "missing_count": 12899,
+      "missing_pct": 2.545733
+    },
+    "V57": {
+      "missing_count": 12899,
+      "missing_pct": 2.545733
+    },
+    "V58": {
+      "missing_count": 12899,
+      "missing_pct": 2.545733
+    },
+    "V59": {
+      "missing_count": 12899,
+      "missing_pct": 2.545733
+    },
+    "V60": {
+      "missing_count": 12899,
+      "missing_pct": 2.545733
+    },
+    "V61": {
+      "missing_count": 12899,
+      "missing_pct": 2.545733
+    },
+    "V62": {
+      "missing_count": 12899,
+      "missing_pct": 2.545733
+    },
+    "V63": {
+      "missing_count": 12899,
+      "missing_pct": 2.545733
+    },
+    "V64": {
+      "missing_count": 12899,
+      "missing_pct": 2.545733
+    },
+    "V65": {
+      "missing_count": 12899,
+      "missing_pct": 2.545733
+    },
+    "V66": {
+      "missing_count": 12899,
+      "missing_pct": 2.545733
+    },
+    "V67": {
+      "missing_count": 12899,
+      "missing_pct": 2.545733
+    },
+    "V68": {
+      "missing_count": 12899,
+      "missing_pct": 2.545733
+    },
+    "V69": {
+      "missing_count": 12899,
+      "missing_pct": 2.545733
+    },
+    "V70": {
+      "missing_count": 12899,
+      "missing_pct": 2.545733
+    },
+    "V71": {
+      "missing_count": 12899,
+      "missing_pct": 2.545733
+    },
+    "V72": {
+      "missing_count": 12899,
+      "missing_pct": 2.545733
+    },
+    "V73": {
+      "missing_count": 12899,
+      "missing_pct": 2.545733
+    },
+    "V74": {
+      "missing_count": 12899,
+      "missing_pct": 2.545733
+    },
+    "V75": {
+      "missing_count": 12081,
+      "missing_pct": 2.384293
+    },
+    "V76": {
+      "missing_count": 12081,
+      "missing_pct": 2.384293
+    },
+    "V77": {
+      "missing_count": 12081,
+      "missing_pct": 2.384293
+    },
+    "V78": {
+      "missing_count": 12081,
+      "missing_pct": 2.384293
+    },
+    "V79": {
+      "missing_count": 12081,
+      "missing_pct": 2.384293
+    },
+    "V80": {
+      "missing_count": 12081,
+      "missing_pct": 2.384293
+    },
+    "V81": {
+      "missing_count": 12081,
+      "missing_pct": 2.384293
+    },
+    "V82": {
+      "missing_count": 12081,
+      "missing_pct": 2.384293
+    },
+    "V83": {
+      "missing_count": 12081,
+      "missing_pct": 2.384293
+    },
+    "V84": {
+      "missing_count": 12081,
+      "missing_pct": 2.384293
+    },
+    "V85": {
+      "missing_count": 12081,
+      "missing_pct": 2.384293
+    },
+    "V86": {
+      "missing_count": 12081,
+      "missing_pct": 2.384293
+    },
+    "V87": {
+      "missing_count": 12081,
+      "missing_pct": 2.384293
+    },
+    "V88": {
+      "missing_count": 12081,
+      "missing_pct": 2.384293
+    },
+    "V89": {
+      "missing_count": 12081,
+      "missing_pct": 2.384293
+    },
+    "V90": {
+      "missing_count": 12081,
+      "missing_pct": 2.384293
+    },
+    "V91": {
+      "missing_count": 12081,
+      "missing_pct": 2.384293
+    },
+    "V92": {
+      "missing_count": 12081,
+      "missing_pct": 2.384293
+    },
+    "V93": {
+      "missing_count": 12081,
+      "missing_pct": 2.384293
+    },
+    "V94": {
+      "missing_count": 12081,
+      "missing_pct": 2.384293
+    },
+    "V95": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V96": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V97": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V98": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V99": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V100": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V101": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V102": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V103": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V104": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V105": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V106": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V107": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V108": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V109": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V110": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V111": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V112": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V113": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V114": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V115": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V116": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V117": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V118": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V119": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V120": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V121": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V122": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V123": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V124": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V125": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V126": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V127": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V128": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V129": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V130": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V131": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V132": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V133": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V134": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V135": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V136": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V137": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "V138": {
+      "missing_count": 430906,
+      "missing_pct": 85.043153
+    },
+    "V139": {
+      "missing_count": 430906,
+      "missing_pct": 85.043153
+    },
+    "V140": {
+      "missing_count": 430906,
+      "missing_pct": 85.043153
+    },
+    "V141": {
+      "missing_count": 430906,
+      "missing_pct": 85.043153
+    },
+    "V142": {
+      "missing_count": 430906,
+      "missing_pct": 85.043153
+    },
+    "V143": {
+      "missing_count": 430636,
+      "missing_pct": 84.989866
+    },
+    "V144": {
+      "missing_count": 430636,
+      "missing_pct": 84.989866
+    },
+    "V145": {
+      "missing_count": 430636,
+      "missing_pct": 84.989866
+    },
+    "V146": {
+      "missing_count": 430906,
+      "missing_pct": 85.043153
+    },
+    "V147": {
+      "missing_count": 430906,
+      "missing_pct": 85.043153
+    },
+    "V148": {
+      "missing_count": 430906,
+      "missing_pct": 85.043153
+    },
+    "V149": {
+      "missing_count": 430906,
+      "missing_pct": 85.043153
+    },
+    "V150": {
+      "missing_count": 430636,
+      "missing_pct": 84.989866
+    },
+    "V151": {
+      "missing_count": 430636,
+      "missing_pct": 84.989866
+    },
+    "V152": {
+      "missing_count": 430636,
+      "missing_pct": 84.989866
+    },
+    "V153": {
+      "missing_count": 430906,
+      "missing_pct": 85.043153
+    },
+    "V154": {
+      "missing_count": 430906,
+      "missing_pct": 85.043153
+    },
+    "V155": {
+      "missing_count": 430906,
+      "missing_pct": 85.043153
+    },
+    "V156": {
+      "missing_count": 430906,
+      "missing_pct": 85.043153
+    },
+    "V157": {
+      "missing_count": 430906,
+      "missing_pct": 85.043153
+    },
+    "V158": {
+      "missing_count": 430906,
+      "missing_pct": 85.043153
+    },
+    "V159": {
+      "missing_count": 430636,
+      "missing_pct": 84.989866
+    },
+    "V160": {
+      "missing_count": 430636,
+      "missing_pct": 84.989866
+    },
+    "V161": {
+      "missing_count": 430906,
+      "missing_pct": 85.043153
+    },
+    "V162": {
+      "missing_count": 430906,
+      "missing_pct": 85.043153
+    },
+    "V163": {
+      "missing_count": 430906,
+      "missing_pct": 85.043153
+    },
+    "V164": {
+      "missing_count": 430636,
+      "missing_pct": 84.989866
+    },
+    "V165": {
+      "missing_count": 430636,
+      "missing_pct": 84.989866
+    },
+    "V166": {
+      "missing_count": 430636,
+      "missing_pct": 84.989866
+    },
+    "V167": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V168": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V169": {
+      "missing_count": 370316,
+      "missing_pct": 73.085174
+    },
+    "V170": {
+      "missing_count": 370316,
+      "missing_pct": 73.085174
+    },
+    "V171": {
+      "missing_count": 370316,
+      "missing_pct": 73.085174
+    },
+    "V172": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V173": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V174": {
+      "missing_count": 370316,
+      "missing_pct": 73.085174
+    },
+    "V175": {
+      "missing_count": 370316,
+      "missing_pct": 73.085174
+    },
+    "V176": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V177": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V178": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V179": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V180": {
+      "missing_count": 370316,
+      "missing_pct": 73.085174
+    },
+    "V181": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V182": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V183": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V184": {
+      "missing_count": 370316,
+      "missing_pct": 73.085174
+    },
+    "V185": {
+      "missing_count": 370316,
+      "missing_pct": 73.085174
+    },
+    "V186": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V187": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V188": {
+      "missing_count": 370316,
+      "missing_pct": 73.085174
+    },
+    "V189": {
+      "missing_count": 370316,
+      "missing_pct": 73.085174
+    },
+    "V190": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V191": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V192": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V193": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V194": {
+      "missing_count": 370316,
+      "missing_pct": 73.085174
+    },
+    "V195": {
+      "missing_count": 370316,
+      "missing_pct": 73.085174
+    },
+    "V196": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V197": {
+      "missing_count": 370316,
+      "missing_pct": 73.085174
+    },
+    "V198": {
+      "missing_count": 370316,
+      "missing_pct": 73.085174
+    },
+    "V199": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V200": {
+      "missing_count": 370316,
+      "missing_pct": 73.085174
+    },
+    "V201": {
+      "missing_count": 370316,
+      "missing_pct": 73.085174
+    },
+    "V202": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V203": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V204": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V205": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V206": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V207": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V208": {
+      "missing_count": 370316,
+      "missing_pct": 73.085174
+    },
+    "V209": {
+      "missing_count": 370316,
+      "missing_pct": 73.085174
+    },
+    "V210": {
+      "missing_count": 370316,
+      "missing_pct": 73.085174
+    },
+    "V211": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V212": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V213": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V214": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V215": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V216": {
+      "missing_count": 369957,
+      "missing_pct": 73.014322
+    },
+    "V217": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V218": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V219": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V220": {
+      "missing_count": 369375,
+      "missing_pct": 72.899459
+    },
+    "V221": {
+      "missing_count": 369375,
+      "missing_pct": 72.899459
+    },
+    "V222": {
+      "missing_count": 369375,
+      "missing_pct": 72.899459
+    },
+    "V223": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V224": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V225": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V226": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V227": {
+      "missing_count": 369375,
+      "missing_pct": 72.899459
+    },
+    "V228": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V229": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V230": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V231": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V232": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V233": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V234": {
+      "missing_count": 369375,
+      "missing_pct": 72.899459
+    },
+    "V235": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V236": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V237": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V238": {
+      "missing_count": 369375,
+      "missing_pct": 72.899459
+    },
+    "V239": {
+      "missing_count": 369375,
+      "missing_pct": 72.899459
+    },
+    "V240": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V241": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V242": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V243": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V244": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V245": {
+      "missing_count": 369375,
+      "missing_pct": 72.899459
+    },
+    "V246": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V247": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V248": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V249": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V250": {
+      "missing_count": 369375,
+      "missing_pct": 72.899459
+    },
+    "V251": {
+      "missing_count": 369375,
+      "missing_pct": 72.899459
+    },
+    "V252": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V253": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V254": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V255": {
+      "missing_count": 369375,
+      "missing_pct": 72.899459
+    },
+    "V256": {
+      "missing_count": 369375,
+      "missing_pct": 72.899459
+    },
+    "V257": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V258": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V259": {
+      "missing_count": 369375,
+      "missing_pct": 72.899459
+    },
+    "V260": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V261": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V262": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V263": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V264": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V265": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V266": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V267": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V268": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V269": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V270": {
+      "missing_count": 369375,
+      "missing_pct": 72.899459
+    },
+    "V271": {
+      "missing_count": 369375,
+      "missing_pct": 72.899459
+    },
+    "V272": {
+      "missing_count": 369375,
+      "missing_pct": 72.899459
+    },
+    "V273": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V274": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V275": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V276": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V277": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V278": {
+      "missing_count": 379963,
+      "missing_pct": 74.989096
+    },
+    "V279": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V280": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V281": {
+      "missing_count": 6031,
+      "missing_pct": 1.190272
+    },
+    "V282": {
+      "missing_count": 6031,
+      "missing_pct": 1.190272
+    },
+    "V283": {
+      "missing_count": 6031,
+      "missing_pct": 1.190272
+    },
+    "V284": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V285": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V286": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V287": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V288": {
+      "missing_count": 6031,
+      "missing_pct": 1.190272
+    },
+    "V289": {
+      "missing_count": 6031,
+      "missing_pct": 1.190272
+    },
+    "V290": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V291": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V292": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V293": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V294": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V295": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V296": {
+      "missing_count": 6031,
+      "missing_pct": 1.190272
+    },
+    "V297": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V298": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V299": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V300": {
+      "missing_count": 6031,
+      "missing_pct": 1.190272
+    },
+    "V301": {
+      "missing_count": 6031,
+      "missing_pct": 1.190272
+    },
+    "V302": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V303": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V304": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V305": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V306": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V307": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V308": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V309": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V310": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V311": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V312": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V313": {
+      "missing_count": 6031,
+      "missing_pct": 1.190272
+    },
+    "V314": {
+      "missing_count": 6031,
+      "missing_pct": 1.190272
+    },
+    "V315": {
+      "missing_count": 6031,
+      "missing_pct": 1.190272
+    },
+    "V316": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V317": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V318": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V319": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V320": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V321": {
+      "missing_count": 3,
+      "missing_pct": 0.000592
+    },
+    "V322": {
+      "missing_count": 430260,
+      "missing_pct": 84.915659
+    },
+    "V323": {
+      "missing_count": 430260,
+      "missing_pct": 84.915659
+    },
+    "V324": {
+      "missing_count": 430260,
+      "missing_pct": 84.915659
+    },
+    "V325": {
+      "missing_count": 430260,
+      "missing_pct": 84.915659
+    },
+    "V326": {
+      "missing_count": 430260,
+      "missing_pct": 84.915659
+    },
+    "V327": {
+      "missing_count": 430260,
+      "missing_pct": 84.915659
+    },
+    "V328": {
+      "missing_count": 430260,
+      "missing_pct": 84.915659
+    },
+    "V329": {
+      "missing_count": 430260,
+      "missing_pct": 84.915659
+    },
+    "V330": {
+      "missing_count": 430260,
+      "missing_pct": 84.915659
+    },
+    "V331": {
+      "missing_count": 430260,
+      "missing_pct": 84.915659
+    },
+    "V332": {
+      "missing_count": 430260,
+      "missing_pct": 84.915659
+    },
+    "V333": {
+      "missing_count": 430260,
+      "missing_pct": 84.915659
+    },
+    "V334": {
+      "missing_count": 430260,
+      "missing_pct": 84.915659
+    },
+    "V335": {
+      "missing_count": 430260,
+      "missing_pct": 84.915659
+    },
+    "V336": {
+      "missing_count": 430260,
+      "missing_pct": 84.915659
+    },
+    "V337": {
+      "missing_count": 430260,
+      "missing_pct": 84.915659
+    },
+    "V338": {
+      "missing_count": 430260,
+      "missing_pct": 84.915659
+    },
+    "V339": {
+      "missing_count": 430260,
+      "missing_pct": 84.915659
+    }
+  },
+  "test_identity.csv": {
+    "TransactionID": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "id-01": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "id-02": {
+      "missing_count": 4931,
+      "missing_pct": 3.474811
+    },
+    "id-03": {
+      "missing_count": 75426,
+      "missing_pct": 53.151712
+    },
+    "id-04": {
+      "missing_count": 75426,
+      "missing_pct": 53.151712
+    },
+    "id-05": {
+      "missing_count": 7157,
+      "missing_pct": 5.043444
+    },
+    "id-06": {
+      "missing_count": 7157,
+      "missing_pct": 5.043444
+    },
+    "id-07": {
+      "missing_count": 136848,
+      "missing_pct": 96.434989
+    },
+    "id-08": {
+      "missing_count": 136848,
+      "missing_pct": 96.434989
+    },
+    "id-09": {
+      "missing_count": 67569,
+      "missing_pct": 47.614987
+    },
+    "id-10": {
+      "missing_count": 67569,
+      "missing_pct": 47.614987
+    },
+    "id-11": {
+      "missing_count": 5129,
+      "missing_pct": 3.614339
+    },
+    "id-12": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "id-13": {
+      "missing_count": 11621,
+      "missing_pct": 8.189166
+    },
+    "id-14": {
+      "missing_count": 70550,
+      "missing_pct": 49.715659
+    },
+    "id-15": {
+      "missing_count": 4930,
+      "missing_pct": 3.474106
+    },
+    "id-16": {
+      "missing_count": 16160,
+      "missing_pct": 11.38774
+    },
+    "id-17": {
+      "missing_count": 5941,
+      "missing_pct": 4.186545
+    },
+    "id-18": {
+      "missing_count": 91032,
+      "missing_pct": 64.149055
+    },
+    "id-19": {
+      "missing_count": 6001,
+      "missing_pct": 4.228826
+    },
+    "id-20": {
+      "missing_count": 6274,
+      "missing_pct": 4.421205
+    },
+    "id-21": {
+      "missing_count": 136848,
+      "missing_pct": 96.434989
+    },
+    "id-22": {
+      "missing_count": 136845,
+      "missing_pct": 96.432875
+    },
+    "id-23": {
+      "missing_count": 136845,
+      "missing_pct": 96.432875
+    },
+    "id-24": {
+      "missing_count": 137167,
+      "missing_pct": 96.659784
+    },
+    "id-25": {
+      "missing_count": 136868,
+      "missing_pct": 96.449083
+    },
+    "id-26": {
+      "missing_count": 136860,
+      "missing_pct": 96.443445
+    },
+    "id-27": {
+      "missing_count": 136845,
+      "missing_pct": 96.432875
+    },
+    "id-28": {
+      "missing_count": 5129,
+      "missing_pct": 3.614339
+    },
+    "id-29": {
+      "missing_count": 5129,
+      "missing_pct": 3.614339
+    },
+    "id-30": {
+      "missing_count": 71248,
+      "missing_pct": 50.20753
+    },
+    "id-31": {
+      "missing_count": 5282,
+      "missing_pct": 3.722156
+    },
+    "id-32": {
+      "missing_count": 71236,
+      "missing_pct": 50.199074
+    },
+    "id-33": {
+      "missing_count": 71236,
+      "missing_pct": 50.199074
+    },
+    "id-34": {
+      "missing_count": 69732,
+      "missing_pct": 49.139225
+    },
+    "id-35": {
+      "missing_count": 4930,
+      "missing_pct": 3.474106
+    },
+    "id-36": {
+      "missing_count": 4930,
+      "missing_pct": 3.474106
+    },
+    "id-37": {
+      "missing_count": 4930,
+      "missing_pct": 3.474106
+    },
+    "id-38": {
+      "missing_count": 4930,
+      "missing_pct": 3.474106
+    },
+    "DeviceType": {
+      "missing_count": 4976,
+      "missing_pct": 3.506522
+    },
+    "DeviceInfo": {
+      "missing_count": 26850,
+      "missing_pct": 18.920843
+    }
+  },
+  "sample_submission.csv": {
+    "TransactionID": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "isFraud": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    }
+  }
+}

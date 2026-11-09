@@ -1,0 +1,429 @@
+{
+  "input_file": ".\\cleaned_data\\train_cleaned.csv",
+  "input_scope": "training data only; no test files opened",
+  "rows": 590540,
+  "columns": 434,
+  "target_counts": {
+    "0": 569877,
+    "1": 20663
+  },
+  "fraud_rate": 0.03499000914417313,
+  "amount_summary": {
+    "overall": {
+      "n": 590540,
+      "min": 0.251,
+      "median": 68.769,
+      "mean": 135.02717637247264,
+      "p75": 125.0,
+      "p90": 275.293,
+      "p99": 1104.0,
+      "max": 31937.391,
+      "missing_count": 0,
+      "nonpositive_count": 0
+    },
+    "by_class": {
+      "0": {
+        "p25": 43.97,
+        "median": 68.5,
+        "p75": 120.0,
+        "p90": 267.11200000000184,
+        "p99": 1104.0,
+        "mean": 134.51166457849678,
+        "n": 569877
+      },
+      "1": {
+        "p25": 35.044,
+        "median": 75.0,
+        "p75": 161.0,
+        "p90": 335.0,
+        "p99": 994.0,
+        "mean": 149.2447785897498,
+        "n": 20663
+      }
+    }
+  },
+  "missingness": {
+    "average_transaction_feature_pct": 41.28298957397959,
+    "average_identity_feature_pct": 84.483637775,
+    "top_20": [
+      {
+        "column": "id_24",
+        "missing_count": 585793,
+        "missing_pct": 99.196159
+      },
+      {
+        "column": "id_25",
+        "missing_count": 585408,
+        "missing_pct": 99.130965
+      },
+      {
+        "column": "id_07",
+        "missing_count": 585385,
+        "missing_pct": 99.12707
+      },
+      {
+        "column": "id_08",
+        "missing_count": 585385,
+        "missing_pct": 99.12707
+      },
+      {
+        "column": "id_21",
+        "missing_count": 585381,
+        "missing_pct": 99.126393
+      },
+      {
+        "column": "id_26",
+        "missing_count": 585377,
+        "missing_pct": 99.125715
+      },
+      {
+        "column": "id_22",
+        "missing_count": 585371,
+        "missing_pct": 99.124699
+      },
+      {
+        "column": "id_23",
+        "missing_count": 585371,
+        "missing_pct": 99.124699
+      },
+      {
+        "column": "id_27",
+        "missing_count": 585371,
+        "missing_pct": 99.124699
+      },
+      {
+        "column": "dist2",
+        "missing_count": 552913,
+        "missing_pct": 93.628374
+      },
+      {
+        "column": "D7",
+        "missing_count": 551623,
+        "missing_pct": 93.40993
+      },
+      {
+        "column": "id_18",
+        "missing_count": 545427,
+        "missing_pct": 92.360721
+      },
+      {
+        "column": "D13",
+        "missing_count": 528588,
+        "missing_pct": 89.509263
+      },
+      {
+        "column": "D14",
+        "missing_count": 528353,
+        "missing_pct": 89.469469
+      },
+      {
+        "column": "D12",
+        "missing_count": 525823,
+        "missing_pct": 89.041047
+      },
+      {
+        "column": "id_03",
+        "missing_count": 524216,
+        "missing_pct": 88.768923
+      },
+      {
+        "column": "id_04",
+        "missing_count": 524216,
+        "missing_pct": 88.768923
+      },
+      {
+        "column": "D6",
+        "missing_count": 517353,
+        "missing_pct": 87.606767
+      },
+      {
+        "column": "id_33",
+        "missing_count": 517251,
+        "missing_pct": 87.589494
+      },
+      {
+        "column": "D8",
+        "missing_count": 515614,
+        "missing_pct": 87.31229
+      }
+    ]
+  },
+  "identity_presence_by_class": {
+    "0": {
+      "present": 132915,
+      "absent": 436962
+    },
+    "1": {
+      "present": 11318,
+      "absent": 9345
+    }
+  },
+  "productcd": [
+    {
+      "category": "W",
+      "legitimate": 430701,
+      "fraudulent": 8969,
+      "total": 439670,
+      "fraud_rate": 0.020399390451929858,
+      "ci_low": 0.019985706557854893,
+      "ci_high": 0.020821455257159033
+    },
+    {
+      "category": "C",
+      "legitimate": 60511,
+      "fraudulent": 8008,
+      "total": 68519,
+      "fraud_rate": 0.11687269224594637,
+      "ci_low": 0.11448856894255299,
+      "ci_high": 0.1192997741258115
+    },
+    {
+      "category": "R",
+      "legitimate": 36273,
+      "fraudulent": 1426,
+      "total": 37699,
+      "fraud_rate": 0.03782593702750736,
+      "ci_low": 0.03594674376324303,
+      "ci_high": 0.03979931353128195
+    },
+    {
+      "category": "H",
+      "legitimate": 31450,
+      "fraudulent": 1574,
+      "total": 33024,
+      "fraud_rate": 0.04766230620155039,
+      "ci_low": 0.04541658715019658,
+      "ci_high": 0.05001325165586092
+    },
+    {
+      "category": "S",
+      "legitimate": 10942,
+      "fraudulent": 686,
+      "total": 11628,
+      "fraud_rate": 0.058995528035775714,
+      "ci_low": 0.05485679343952491,
+      "ci_high": 0.06342556006157504
+    }
+  ],
+  "card4": [
+    {
+      "category": "visa",
+      "legitimate": 371394,
+      "fraudulent": 13373,
+      "total": 384767,
+      "fraud_rate": 0.03475609914571676,
+      "ci_low": 0.03418197817366217,
+      "ci_high": 0.035339510223861975
+    },
+    {
+      "category": "mastercard",
+      "legitimate": 182721,
+      "fraudulent": 6496,
+      "total": 189217,
+      "fraud_rate": 0.03433095334985757,
+      "ci_low": 0.033519947277410755,
+      "ci_high": 0.035160867637641396
+    },
+    {
+      "category": "american express",
+      "legitimate": 8089,
+      "fraudulent": 239,
+      "total": 8328,
+      "fraud_rate": 0.028698366954851104,
+      "ci_low": 0.025324075207080073,
+      "ci_high": 0.032507269066195596
+    },
+    {
+      "category": "discover",
+      "legitimate": 6137,
+      "fraudulent": 514,
+      "total": 6651,
+      "fraud_rate": 0.0772816117877011,
+      "ci_low": 0.0711050591456681,
+      "ci_high": 0.08394620458388484
+    },
+    {
+      "category": "Missing",
+      "legitimate": 1536,
+      "fraudulent": 41,
+      "total": 1577,
+      "fraud_rate": 0.02599873176918199,
+      "ci_low": 0.019221939159910197,
+      "ci_high": 0.03507926344002139
+    }
+  ],
+  "card6": [
+    {
+      "category": "debit",
+      "legitimate": 429264,
+      "fraudulent": 10674,
+      "total": 439938,
+      "fraud_rate": 0.024262509717278342,
+      "ci_low": 0.023811978579454128,
+      "ci_high": 0.02472134919484139
+    },
+    {
+      "category": "credit",
+      "legitimate": 139036,
+      "fraudulent": 9950,
+      "total": 148986,
+      "fraud_rate": 0.06678479857167788,
+      "ci_low": 0.0655282458886095,
+      "ci_high": 0.06806369156331946
+    },
+    {
+      "category": "Missing",
+      "legitimate": 1532,
+      "fraudulent": 39,
+      "total": 1571,
+      "fraud_rate": 0.024824952259707194,
+      "ci_low": 0.018212513428790565,
+      "ci_high": 0.033755633716928725
+    },
+    {
+      "category": "debit or credit",
+      "legitimate": 30,
+      "fraudulent": 0,
+      "total": 30,
+      "fraud_rate": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.113517091390478
+    },
+    {
+      "category": "charge card",
+      "legitimate": 15,
+      "fraudulent": 0,
+      "total": 15,
+      "fraud_rate": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.20388926630434784
+    }
+  ],
+  "email_domain_top_volume": [
+    {
+      "category": "gmail.com",
+      "legitimate": 218412,
+      "fraudulent": 9943,
+      "total": 228355,
+      "fraud_rate": 0.043541853692715286,
+      "ci_low": 0.042712481616158884,
+      "ci_high": 0.04438658343707705
+    },
+    {
+      "category": "yahoo.com",
+      "legitimate": 98637,
+      "fraudulent": 2297,
+      "total": 100934,
+      "fraud_rate": 0.02275744545940912,
+      "ci_low": 0.021855420736373664,
+      "ci_high": 0.023695796994440195
+    },
+    {
+      "category": "Missing",
+      "legitimate": 91666,
+      "fraudulent": 2790,
+      "total": 94456,
+      "fraud_rate": 0.02953756246294571,
+      "ci_low": 0.028476811194763776,
+      "ci_high": 0.03063658033139775
+    },
+    {
+      "category": "hotmail.com",
+      "legitimate": 42854,
+      "fraudulent": 2396,
+      "total": 45250,
+      "fraud_rate": 0.052950276243093924,
+      "ci_low": 0.050924641585673745,
+      "ci_high": 0.05505181103000872
+    },
+    {
+      "category": "anonymous.com",
+      "legitimate": 36139,
+      "fraudulent": 859,
+      "total": 36998,
+      "fraud_rate": 0.02321747121466025,
+      "ci_low": 0.021731730296397606,
+      "ci_high": 0.024802213030358324
+    },
+    {
+      "category": "aol.com",
+      "legitimate": 27672,
+      "fraudulent": 617,
+      "total": 28289,
+      "fraud_rate": 0.021810597758846195,
+      "ci_low": 0.020172274596409176,
+      "ci_high": 0.02357877796665328
+    },
+    {
+      "category": "comcast.net",
+      "legitimate": 7642,
+      "fraudulent": 246,
+      "total": 7888,
+      "fraud_rate": 0.03118661257606491,
+      "ci_low": 0.027572987904651475,
+      "ci_high": 0.035256656319327895
+    },
+    {
+      "category": "icloud.com",
+      "legitimate": 6070,
+      "fraudulent": 197,
+      "total": 6267,
+      "fraud_rate": 0.03143449816499123,
+      "ci_low": 0.02739324024258681,
+      "ci_high": 0.03604985485967188
+    },
+    {
+      "category": "outlook.com",
+      "legitimate": 4614,
+      "fraudulent": 482,
+      "total": 5096,
+      "fraud_rate": 0.0945839874411303,
+      "ci_low": 0.08685181653827594,
+      "ci_high": 0.10292694051174696
+    },
+    {
+      "category": "msn.com",
+      "legitimate": 4002,
+      "fraudulent": 90,
+      "total": 4092,
+      "fraud_rate": 0.021994134897360705,
+      "ci_low": 0.01792847123222261,
+      "ci_high": 0.026956467677524285
+    },
+    {
+      "category": "att.net",
+      "legitimate": 4003,
+      "fraudulent": 30,
+      "total": 4033,
+      "fraud_rate": 0.007438631291842301,
+      "ci_low": 0.00521554507112801,
+      "ci_high": 0.010599194848317927
+    },
+    {
+      "category": "live.com",
+      "legitimate": 2957,
+      "fraudulent": 84,
+      "total": 3041,
+      "fraud_rate": 0.027622492601118053,
+      "ci_low": 0.022366715290728336,
+      "ci_high": 0.03407024353169448
+    }
+  ],
+  "findings": [
+    "The training set contains 590,540 transactions: 20,663 fraudulent (3.50%) and 569,877 legitimate (96.50%). This is a strongly imbalanced target distribution.",
+    "TransactionAmt is right-skewed: the overall median is 68.77, the mean is 135.03, and the 99th percentile is 1104.00. The plot uses a log10 amount axis so the long tail and dense low-value region are both visible.",
+    "Fraudulent transaction amount median is 75.00 versus 68.50 for legitimate transactions. This is a descriptive difference and does not establish a cause.",
+    "ProductCD category C has the highest observed fraud rate (11.69%, n=68,519); the largest category by volume is W (n=439,670). Rates are accompanied by Wilson 95% intervals and should be read with category sizes.",
+    "Average missingness is 84.5% across the 40 identity columns and 41.3% across the 392 transaction feature columns in the merged training table. Missingness includes transactions without a linked identity record.",
+    "Identity attributes are present for 11,318/20,663 fraudulent transactions (54.77%) and 132,915/569,877 legitimate transactions (23.32%), where presence means at least one joined identity field is nonmissing. This difference is descriptive only.",
+    "Among card4 categories with at least 1,000 transactions, discover has the highest observed fraud rate (7.73%, n=6,651).",
+    "Among card6 categories with at least 1,000 transactions, credit has the highest observed fraud rate (6.68%, n=148,986)."
+  ],
+  "charts": [
+    ".\\week1_eda\\charts\\01_class_distribution.png",
+    ".\\week1_eda\\charts\\02_amount_distribution.png",
+    ".\\week1_eda\\charts\\03_missingness_top20.png",
+    ".\\week1_eda\\charts\\04_productcd_fraud_rate.png",
+    ".\\week1_eda\\charts\\05_card_category_rates.png"
+  ]
+}

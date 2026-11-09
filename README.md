@@ -1,2 +1,63 @@
 # IEEE-CIS-Fraud-Detection
 IEEE-CIS Fraud Detection – Data Cleaning, Exploratory Data Analysis and Machine Learning using Python.
+
+## Week 1: Data Cleaning and Exploratory Data Analysis
+
+This repository begins a five-week Data Science internship project using the IEEE-CIS Fraud Detection dataset. This first upload contains the completed Week 1 cleaning and exploratory analysis deliverables. Later-week reports and artifacts are being kept locally for separate uploads.
+
+### Objective
+
+Prepare an auditable view of the transaction and identity data, understand its quality and missingness, and describe initial patterns in the labeled training data. Week 1 does not train a machine-learning model and does not use test data for exploratory analysis.
+
+### Dataset and cleaning
+
+The project source data contains 590,540 labeled training transactions and 506,691 test transactions. The training target is `isFraud`. Transaction and identity tables are joined by `TransactionID`, separately for training and test. The original CSV files are not included in this repository.
+
+The cleaning workflow records source schemas before transformation, validates keys and row counts, and checks duplicate records. No exact duplicates or duplicate `TransactionID` keys were found, so no rows were removed. Test identity feature names were normalized to match the training schema. Identity data is left-joined so transactions without an identity record remain present. High-missingness columns were retained, and the clean merged tables preserve missing values for later handling.
+
+### Week 1 findings
+
+- Training contains 20,663 fraudulent transactions (3.50%) and 569,877 legitimate transactions (96.50%), so the target is strongly imbalanced.
+- Transaction amounts are right-skewed: the median is 68.77, the mean is 135.03, and the 99th percentile is 1,104.00.
+- The observed fraud-rate median amount is 75.00, compared with 68.50 for legitimate transactions. This is descriptive and does not establish a cause.
+- ProductCD category C has the highest observed fraud rate (11.69%; 68,519 transactions); ProductCD W has the largest volume (439,670 transactions).
+- Average missingness is 84.5% across identity columns and 41.3% across transaction feature columns in the merged training table. Many transactions have no linked identity row.
+- Among categories with at least 1,000 transactions, `discover` has the highest observed `card4` fraud rate (7.73%), and `credit` has the highest observed `card6` fraud rate (6.68%).
+
+These are patterns in the supplied training sample. They should not be interpreted as causal relationships or guarantees about future transactions.
+
+### Visualizations
+
+Five PNG charts are in `week1_eda/charts/`: class distribution, transaction amount distribution, top-column missingness, fraud rate by ProductCD, and card-category fraud rates. The Word report and `findings.md` explain what each chart shows and why it matters.
+
+### Repository structure
+
+```text
+cleaned_data/                  # Cleaning, preprocessing and verification scripts; summaries only
+week1_eda/                     # Week 1 EDA scripts, report, findings, metrics and charts
+submission_descriptions/       # YuvaIntern portal description for Week 1
+README.md
+requirements.txt
+.gitignore
+```
+
+### Reproducing Week 1
+
+Use Python 3.12 or a compatible Python version and install dependencies from `requirements.txt`. Obtain the five original CSV files from their authorized source and keep them outside Git. To create the cleaned tables, place the files in a local data folder and run:
+
+```powershell
+python cleaned_data/clean_and_audit.py --source-dir path/to/original_csvs --output-dir cleaned_data
+```
+
+Then run the Week 1 training-only analysis and report builder from the repository root:
+
+```powershell
+python week1_eda/eda_analysis.py
+python week1_eda/build_report.py
+```
+
+The EDA script reads `cleaned_data/train_cleaned.csv`. It does not open test data. Generated transaction tables and original datasets are excluded from this repository and should remain untracked locally.
+
+### Data and privacy note
+
+No original or processed row-level CSVs, validation predictions, credentials, or user-specific local paths are included. The project summaries and figures contain aggregate findings only. Review the dataset provider’s terms before obtaining or using the source data.
